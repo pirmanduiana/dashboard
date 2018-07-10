@@ -11,5 +11,5 @@
 |
 */
 
-Route::resource('/daftar','ContentController');
+Route::resource('/','ContentController');
 Route::resource('/feedback','FeedbackController');

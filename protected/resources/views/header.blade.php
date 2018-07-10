@@ -1,6 +1,11 @@
 <div class="header">
-    <div class="sites-logo">
-        <img src="assets/images/logo-pemkab.png" alt="logo-pemkab-badung">
+    <div class="main-header">
+        <div class="sites-logo">
+            <h1>Pameran Festival Budaya</h1>
+        </div>
+        <div class="date">
+            <p>Jumat 19 Juli</p>
+            <p>10.30</p>
+        </div>
     </div>
-    <p>{{config('app.name')}}</p>
 </div>

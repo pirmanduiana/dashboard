@@ -40,7 +40,7 @@
 </head>
 
 <!-- Body BEGIN -->
-<body class="p-pembangunan">
+<body class="p-pembangunan dashboard">
      
     <!-- BEGIN HEADER -->
         @include('header')
@@ -50,7 +50,7 @@
     <div class="main">
         <div>
             <div class="main-content">
-                @yield('tabs')
+                @yield('dashboard')
             </div>
         </div>
     </div>
@@ -59,9 +59,6 @@
     <!-- BEGIN FOOTER -->
         @include('footer')
     <!-- END FOOTER --> 
-
-    <button onclick="toggleFullScreen(this);" id="btn-fullscreen"><i class="fa fa-expand icon"></i></button>
-
 
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) --> 

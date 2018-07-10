@@ -14,7 +14,7 @@ class ContentController extends Controller
      */
     public function index()
     {
-        return view('tabs-bukutamu');
+        return view('main-dashboard');
     }
 
     /**
