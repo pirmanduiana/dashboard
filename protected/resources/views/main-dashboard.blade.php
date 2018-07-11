@@ -31,9 +31,9 @@
             <div class="rows row-second">
                 <a class="column c5" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-cctv.png" alt="">
+                        <img src="./assets/images/icons/ico-video.png" alt="">
                     </div>
-                    <h2>Pantauan CCCTV</h2>
+                    <h2>Video Profile</h2>
                 </a>
                 <a class="column c6" href="#">
                     <div class="image">
