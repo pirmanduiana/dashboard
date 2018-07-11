@@ -35,7 +35,8 @@ var box4 = {};
 var box5 = { 
     "play" : function(){
         document.getElementById("myNav").style.height = "100vh";
-        $(".main-btn-action").css("margin-bottom","100px").css("transition","0.3s");
+        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%");
         var options = {};
         var player = videojs('my-player', options, function onPlayerReady() {            
             this.play();       
@@ -44,7 +45,8 @@ var box5 = {
     },
     "pause" : function() {
         document.getElementById("myNav").style.height = "0%";
-        $(".main-btn-action").css("margin-bottom","0").css("transition","0.3s");
+        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%");
         $(".video-js").each(function(key,item) {
             $(this)[key].player.pause();    
         });
