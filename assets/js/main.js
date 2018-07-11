@@ -18,39 +18,35 @@ $(document).ready(function(){
         });
     });
 
-
-    // $("#submits").on("click", function(){
-    //     tambah.submit();
-    // });
-
+    video.play();
 
 });
 
-// var tambah = {
-//     "submit" : function(voted){ 
-//         $.ajax({
-//             url: Url,
-//             dataType: 'json',
-//             method: 'post',
-//             data: {daftar: voted}            
-//         })
-//         .done(function (response) {
-//             if (response.success) {
-//                 $.confirm({
-//                     title: 'Info',
-//                     content: response.message,
-//                     autoClose: 'Tutup|2000',
-//                     buttons: {                        
-//                         "Tutup": function () {                        
-//                         }
-//                     }
-//                 });
-//             }
-//         })
-//         .fail(function(xhr){
-//             // console.log(xhr);
-//         });
 
-//     }
-// };
-
+var video = {    
+    "play" : function(){
+        var options = {};
+        var player = videojs('my-player', options, function onPlayerReady() {
+            videojs.log('Your player is ready!');
+            // In this context, `this` is the player that was created by Video.js.
+            this.play();
+            // How about an event listener?
+            this.on('ended', function() {
+                videojs.log('Awww...over so soon?!');
+            });
+        });
+        return true;
+    },
+    "stop" : function() {
+        var options = {};
+        return player = videojs('my-player', options, function onPlayerReady() {
+            videojs.log('Your player is ready!');
+            // In this context, `this` is the player that was created by Video.js.
+            this.stop();
+            // How about an event listener?
+            this.on('ended', function() {
+                videojs.log('Awww...over so soon?!');
+            });
+        });
+    }
+};

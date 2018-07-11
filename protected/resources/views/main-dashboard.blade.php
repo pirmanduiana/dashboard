@@ -56,6 +56,10 @@
             </div>
         </div>
     </div>
+
+    <video id="my-player" class="video-js" width="640" height="264" controls preload="auto" poster="//vjs.zencdn.net/v/oceans.png" data-setup='{}'>
+        <source src="{{ url('assets/videos/sequence_1.mp4') }}" type="video/mp4"></source>        
+    </video>
 @endsection
 
 

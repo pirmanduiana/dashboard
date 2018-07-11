@@ -37,6 +37,13 @@
   
   <!-- jquery confirm -->
   {{ Html::style('assets/js/jquery-confirm-master/dist/jquery-confirm.min.css') }}
+
+  <!-- videojs cdnjs -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video-js.css" rel="stylesheet"> -->
+  {{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video-js.css') }}
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js"></script> -->
+  {{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js') }}  
+
 </head>
 
 <!-- Body BEGIN -->
@@ -70,9 +77,7 @@
     {{ Html::script('assets/plugins/bootstrap/js/bootstrap.min.js') }}
     {{ Html::script('assets/js/jquery-confirm-master/dist/jquery-confirm.min.js') }}
     <!-- END CORE PLUGINS -->
-
     {{ Html::script('assets/js/full.js') }}
-
 
     @yield('scripts')
 </body>
