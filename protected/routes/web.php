@@ -12,4 +12,10 @@
 */
 
 Route::resource('/','ContentController');
-Route::resource('/feedback','FeedbackController');
+
+Route::get('/visimisi', 'GetController@visimisi')->name('get.visimisi');
+Route::get('/struktur', 'GetController@struktur')->name('get.struktur');
+Route::get('/badungkab', 'GetController@badungkab')->name('get.badungkab');
+Route::get('/kominfo', 'GetController@kominfo')->name('get.kominfo');
+Route::get('/ppid', 'GetController@ppid')->name('get.ppid');
+Route::get('/badungmap', 'GetController@badungmap')->name('get.badungmap');

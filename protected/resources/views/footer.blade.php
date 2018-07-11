@@ -95,10 +95,19 @@
         <a href="#" class="closebtn" onclick="box1.sleep();">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox_">
-                <!-- video embed -->
+                <!-- content embed -->
             </div>
         </div>
     </div>            
     <!-- End Modal -->
 </div>
+
+<script>
+    var url_visimisi = "{{ route('get.visimisi') }}";
+    var url_struktur = "{{ route('get.struktur') }}";
+    var url_badungkab = "{{ route('get.badungkab') }}";
+    var url_kominfo = "{{ route('get.kominfo') }}";
+    var url_ppid = "{{ route('get.ppid') }}";
+    var url_badungmap = "{{ route('get.badungmap') }}";
+</script>
 
