@@ -9,7 +9,7 @@
                     </div>
                     <h2>Visi dan Misi</h2>
                 </a>
-                <a class="column c2" href="">
+                <a class="column c2" href="#">
                     <div class="image">
                         <img src="./assets/images/icons/ico-foto.png" alt="">
                     </div>
@@ -57,9 +57,6 @@
         </div>
     </div>
 
-    <video id="my-player" class="video-js" width="640" height="264" controls preload="auto" poster="//vjs.zencdn.net/v/oceans.png" data-setup='{}'>
-        <source src="{{ url('assets/videos/sequence_1.mp4') }}" type="video/mp4"></source>        
-    </video>
 @endsection
 
 

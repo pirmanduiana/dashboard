@@ -18,35 +18,42 @@ $(document).ready(function(){
         });
     });
 
-    video.play();
+    $(".column.c5").on("click", function(){
+        box5.play();
+    });
 
 });
 
+var box1 = {};
 
-var video = {    
+var box2 = {};
+
+var box3 = {};
+
+var box4 = {};
+
+var box5 = { 
     "play" : function(){
+        document.getElementById("myNav").style.height = "100vh";
+        $(".main-btn-action").css("margin-bottom","100px").css("transition","0.3s");
         var options = {};
-        var player = videojs('my-player', options, function onPlayerReady() {
-            videojs.log('Your player is ready!');
-            // In this context, `this` is the player that was created by Video.js.
-            this.play();
-            // How about an event listener?
-            this.on('ended', function() {
-                videojs.log('Awww...over so soon?!');
-            });
+        var player = videojs('my-player', options, function onPlayerReady() {            
+            this.play();       
         });
         return true;
     },
-    "stop" : function() {
-        var options = {};
-        return player = videojs('my-player', options, function onPlayerReady() {
-            videojs.log('Your player is ready!');
-            // In this context, `this` is the player that was created by Video.js.
-            this.stop();
-            // How about an event listener?
-            this.on('ended', function() {
-                videojs.log('Awww...over so soon?!');
-            });
+    "pause" : function() {
+        document.getElementById("myNav").style.height = "0%";
+        $(".main-btn-action").css("margin-bottom","0").css("transition","0.3s");
+        $(".video-js").each(function(key,item) {
+            $(this)[key].player.pause();    
         });
+        return true;
     }
 };
+
+var box6 = {};
+
+var box7 = {};
+
+var box8 = {};
