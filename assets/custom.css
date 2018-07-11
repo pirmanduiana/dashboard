@@ -180,15 +180,55 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     min-height: 10vh;
+    padding: 0 calc(8% - 10px);
+}
+
+.p-pembangunan.dashboard .footer .main-btn-action {
+    flex:0 0 30%;
+}
+
+.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action {
+    display: flex;
+}
+
+.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action {
+    background-color: rgba(255,255,255, .25);
+    min-width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5%;
+}
+
+.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.prev {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: solid 1px rgba(255,255,255, .1);
+}
+
+.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.next {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: solid 1px rgba(255,255,255, .1);
+}
+
+.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action .fa {
+    color:#ffffff;
+    font-size:28px;
+}
+
+.p-pembangunan.dashboard .footer .copyright {
+    flex: 0 0 70%;
 }
 
 .p-pembangunan.dashboard .footer p {
-    color:rgba(255,255,255, .5);
+    color:rgba(255,255,255, .7);
     font-size:1em;
     font-weight: 300;
+    margin-bottom:0;
 }
 
 @media only screen and (min-device-width: 2400px) {
@@ -213,7 +253,31 @@ a:hover {
         min-height: calc(40vh - 100px);
     }
 
+    .p-pembangunan.dashboard .footer {
+        padding: 0 calc(7% - 25px);
+    }
+
     .p-pembangunan.dashboard .footer p {
         font-size: 35px;
+    }
+
+    .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action {
+        padding:4.5%;
+    }
+
+    .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.prev {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-right: solid 2px rgba(255,255,255, .2);
+    }
+    
+    .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.next {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: solid 2px rgba(255,255,255, .2);
+    }
+
+    .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action .fa {
+        font-size: 60px;
     }
 }

@@ -1,8 +1,10 @@
 <div class="footer">
-    <div class="home">
-        <div class="next"></div>
-        <div class="home"></div>
-        <div class="prev"></div>
+    <div class="main-btn-action">
+        <div class="content-btn-action">
+            <a class="btn-action prev" href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+            <a class="btn-action home" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a class="btn-action next" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        </div
     </div>
     <div class="copyright">
         <p> © Copyright 2018 Dinas Komunikasi dan Informasi Kabupaten Badung</p>
