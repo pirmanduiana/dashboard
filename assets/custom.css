@@ -188,6 +188,7 @@ a:hover {
 
 .p-pembangunan.dashboard .footer .main-btn-action {
     flex:0 0 30%;
+    z-index:9999;
 }
 
 .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action {
