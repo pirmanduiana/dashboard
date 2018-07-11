@@ -38,7 +38,7 @@
             color: #040404;
         }
         .overlay .closebtn {
-            position: absolute;
+            /* position: absolute; */
             top: 20px;
             right: 45px;
             font-size: 60px;
@@ -66,14 +66,36 @@
         <p> © Copyright 2018 Dinas Komunikasi dan Informasi Kabupaten Badung</p>
     </div>
 
-    <!-- Modal -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="box5.pause()">&times;</a>
+    <!-- Modal Box Video 5 -->
+    <div id="myNav5" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
-            <div class="align-center">
-                <video id="my-player" class="video-js" controls preload="auto" poster="//vjs.zencdn.net/v/oceans.png" data-setup='{"fluid": true}'>
-                    <source src="{{ url('assets/videos/sequence_1.mp4') }}" type="video/mp4"></source>        
+            <div class="align-center" id="dvModalBox5">
+                <video id='my-player' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
+                    <source src='{{ url("assets/videos/sequence_1.mp4") }}' type='video/mp4'></source>
                 </video>
+            </div>
+        </div>
+    </div>            
+    <!-- End Modal -->
+
+    <!-- Modal Box Video 2 -->
+    <div id="myNav2" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
+        <div class="overlay-content">
+            <div class="align-center" id="dvModalBox2">
+                <!-- video embed -->
+            </div>
+        </div>
+    </div>            
+    <!-- End Modal -->
+
+    <!-- Modal Box lainnya -->
+    <div id="myNav_" class="overlay">
+        <a href="#" class="closebtn" onclick="box1.sleep();">&times;</a>
+        <div class="overlay-content">
+            <div class="align-center" id="dvModalBox_">
+                <!-- video embed -->
             </div>
         </div>
     </div>            
