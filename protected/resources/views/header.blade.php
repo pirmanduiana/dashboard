@@ -4,8 +4,9 @@
             <h1>Pameran Festival Budaya</h1>
         </div>
         <div class="date">
-            <p>Jumat 19 Juli</p>
-            <p>10.30</p>
+            <p id="date_time"></p>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">window.onload = date_time('date_time');</script>

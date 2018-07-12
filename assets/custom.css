@@ -121,6 +121,43 @@ a:hover {
     border-radius: 5px;
     margin-right:2%;
     min-height: calc(40vh - 50px);
+    transition: all 0.4s ease-in;
+}
+
+.p-pembangunan.dashboard .main-content .contents .rows .column:before {
+    content: '';
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+}
+.p-pembangunan.dashboard .main-content .contents .rows .column:focus {
+    outline: 0;
+    color: #fff;
+}
+.p-pembangunan.dashboard .main-content .contents .rows .column:focus:before {
+    animation: effect_dylan 0.8s ease-out;
+}
+  
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
 }
 
 .p-pembangunan.dashboard .main-content .contents .rows .column.c1 {
@@ -174,6 +211,83 @@ a:hover {
     margin-bottom: 0;
 }
 
+/* Modal */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay a {
+    position: absolute;
+    font-size: 40px;
+    z-index: 999;
+    background-color: rgba(255,255,255, .2);
+    color: #ffffff;
+    right: 2%;
+    top: 5%;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.overlay .overlay-content {
+    position: relative;
+    top: 0;
+    width: 100%;
+    transform: translate(0, 0);
+    height: 100vh;
+}
+.my-player-dimensions.vjs-fluid {
+    padding-top: 100vh !important;
+}
+.overlay p {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    background-color: rgba(255,255,255, .3);
+}
+
+.overlay .text-align p{
+    text-align: center;
+    color:#ffffff;
+}
+
+#myNav_ .overlay-content {
+    overflow:auto;
+} 
+
+#myNav_.overlay .overlay-content {
+    height: calc(90vh - 20px);
+}  
+
+#myNav_.overlay .overlay-content #dvModalBox_ {
+    min-height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
 /* Footer */
 
 .p-pembangunan.dashboard .footer {
@@ -188,7 +302,6 @@ a:hover {
 
 .p-pembangunan.dashboard .footer .main-btn-action {
     flex:0 0 30%;
-    z-index:9999;
 }
 
 .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action {
