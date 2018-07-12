@@ -45,7 +45,6 @@
   {{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js') }} 
   
   {{ Html::script('assets/js/date_time.js') }}
-
 </head>
 
 <!-- Body BEGIN -->
@@ -80,6 +79,8 @@
     {{ Html::script('assets/js/jquery-confirm-master/dist/jquery-confirm.min.js') }}
     <!-- END CORE PLUGINS -->
     {{ Html::script('assets/js/full.js') }}
+
+    {{ Html::script('assets/js/material_ripple.js') }}
 
     @yield('scripts')
 </body>

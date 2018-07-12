@@ -124,42 +124,6 @@ a:hover {
     transition: all 0.4s ease-in;
 }
 
-.p-pembangunan.dashboard .main-content .contents .rows .column:before {
-    content: '';
-    background-color: aliceblue;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale(0.001, 0.001);
-}
-.p-pembangunan.dashboard .main-content .contents .rows .column:focus {
-    outline: 0;
-    color: #fff;
-}
-.p-pembangunan.dashboard .main-content .contents .rows .column:focus:before {
-    animation: effect_dylan 0.8s ease-out;
-}
-  
-
-@keyframes effect_dylan {
-  50% {
-    transform: scale(1.5, 1.5);
-    opacity: 0;
-  }
-  99% {
-    transform: scale(0.001, 0.001);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(0.001, 0.001);
-    opacity: 1;
-  }
-}
-
 .p-pembangunan.dashboard .main-content .contents .rows .column.c1 {
     border-color:#19B5FE;
 }
@@ -246,7 +210,7 @@ a:hover {
     transform: translate(0, 0);
     height: 100vh;
 }
-.my-player-dimensions.vjs-fluid {
+.my-player5-dimensions.vjs-fluid, .my-player2-dimensions.vjs-fluid {
     padding-top: 100vh !important;
 }
 .overlay p {

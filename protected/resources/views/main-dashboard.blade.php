@@ -3,7 +3,7 @@
     <div class="section background">
         <div class="contents">
             <div class="rows row-first">
-                <a class="column c1" href="#">
+                <a class="column c1 material_ripple" href="#" data-color="#39a1f4">
                     <div class="image">
                         <img src="./assets/images/icons/ico-visimisi.png" alt="">
                     </div>

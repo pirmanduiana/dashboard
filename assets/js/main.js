@@ -69,7 +69,7 @@ var box2 = {
         document.getElementById("myNav2").style.height = "0%";
         $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","block");
+        $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","0px;");
         player2.pause();
         return true;
@@ -101,24 +101,16 @@ var box3 = {
 
 var box4 = {
     "wakeup" : function(){
-        document.getElementById("myNav_").style.height = "100vh";
-        $.ajax({
-            url: url_badungkab,
-            method: 'get',
-            dataType: 'html',
-            beforeSend: (function(){
-                $("#dvModalBox_").html("Loading...");
-            })
-        })
-        .done(function (html) {
-            $("#dvModalBox_").html(html);
-        })
-        .fail(function(xhr){
-            console.log(xhr);
-        });
+        params  = 'width='+screen.width;
+        params += ', height='+screen.height;
+        params += ', fullscreen=yes';
+        var myWindow = window.open("http://badungkab.go.id/index.php/home", "popupWindow", params);
+        myWindow.onload = function(){
+            this.alert("fdjsla");
+        };
     },
     "sleep" : function(){
-        document.getElementById("myNav_").style.height = "0%";
+        myWindow.close();
     }
 };
 
@@ -141,7 +133,7 @@ var box5 = {
         document.getElementById("myNav5").style.height = "0%";
         $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","block");
+        $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","0px;");
         player5.pause();
         return true;
@@ -150,47 +142,31 @@ var box5 = {
 
 var box6 = {
     "wakeup" : function(){
-        document.getElementById("myNav_").style.height = "100vh";
-        $.ajax({
-            url: url_kominfo,
-            method: 'get',
-            dataType: 'html',
-            beforeSend: (function(){
-                $("#dvModalBox_").html("Loading...");
-            })
-        })
-        .done(function (html) {
-            $("#dvModalBox_").html(html);
-        })
-        .fail(function(xhr){
-            console.log(xhr);
-        });
+        params  = 'width='+screen.width;
+        params += ', height='+screen.height;
+        params += ', fullscreen=yes';
+        var myWindow = window.open("http://badungkab.go.id/instansi/diskominfo", "popupWindow", params);
+        myWindow.onload = function(){
+            this.alert("fdjsla");
+        };
     },
     "sleep" : function(){
-        document.getElementById("myNav_").style.height = "0%";
+        myWindow.close();
     }
 };
 
 var box7 = {
     "wakeup" : function(){
-        document.getElementById("myNav_").style.height = "100vh";
-        $.ajax({
-            url: url_ppid,
-            method: 'get',
-            dataType: 'html',
-            beforeSend: (function(){
-                $("#dvModalBox_").html("Loading...");
-            })
-        })
-        .done(function (html) {
-            $("#dvModalBox_").html(html);
-        })
-        .fail(function(xhr){
-            console.log(xhr);
-        });
+        params  = 'width='+screen.width;
+        params += ', height='+screen.height;
+        params += ', fullscreen=yes';
+        var myWindow = window.open("#", "popupWindow", params);
+        myWindow.onload = function(){
+            this.alert("fdjsla");
+        };
     },
     "sleep" : function(){
-        document.getElementById("myNav_").style.height = "0%";
+        myWindow.close();
     }
 };
 
