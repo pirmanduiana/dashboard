@@ -7,15 +7,15 @@
         </div>
     </div>
     <div class="copyright">
-        <p> © Copyright 2018 Dinas Komunikasi dan Informasi Kabupaten Badung</p>
+        <p> © Copyright 2018 Dinas Komunikasi dan Informatika Kabupaten Badung</p>
     </div>
 
-    <!-- Modal Box Video 2 -->
-    <div id="myNav2" class="overlay fullModal">
+    <!-- Modal Box Video 3 -->
+    <div id="myNav3" class="overlay fullModal">
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox2">
-                <video id='my-player2' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
+                <video id='my-player3' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
                     <source src='{{ url("assets/videos/sequence_2.mp4") }}' type='video/mp4'></source>
                 </video>
             </div>
@@ -23,12 +23,12 @@
     </div>            
     <!-- End Modal -->
 
-    <!-- Modal Box Video 5 -->
-    <div id="myNav5" class="overlay fullModal">
+    <!-- Modal Box Video 4 -->
+    <div id="myNav4" class="overlay fullModal">
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox5">
-                <video id='my-player5' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
+                <video id='my-player4' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
                     <source src='{{ url("assets/videos/sequence_1.mp4") }}' type='video/mp4'></source>
                 </video>
             </div>

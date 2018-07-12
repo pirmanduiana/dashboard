@@ -109,7 +109,7 @@ a:hover {
 
 .p-pembangunan.dashboard .main-content .contents .rows .column {
     display: flex;
-    flex:1 0 20%;
+    flex:1 0 15%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -131,21 +131,27 @@ a:hover {
     border-color: #3FC380;
 }
 .p-pembangunan.dashboard .main-content .contents .rows .column.c3 {
-    border-color:#F5AB35;
+    border-color:#E9D460;
 }
 .p-pembangunan.dashboard .main-content .contents .rows .column.c4 {
-    border-color: #F62459;
-}
-.p-pembangunan.dashboard .main-content .contents .rows .column.c5 {
-    border-color:#F39C12;
-}
-.p-pembangunan.dashboard .main-content .contents .rows .column.c6 {
     border-color: #3498DB;
 }
+.p-pembangunan.dashboard .main-content .contents .rows .column.c5 {
+    border-color:#F62459;
+}
+.p-pembangunan.dashboard .main-content .contents .rows .column.c6 {
+    border-color: #F03434;
+}
 .p-pembangunan.dashboard .main-content .contents .rows .column.c7 {
-    border-color:#F03434;
+    border-color:#52B3D9;
 }
 .p-pembangunan.dashboard .main-content .contents .rows .column.c8 {
+    border-color: #2ECC71;
+}
+.p-pembangunan.dashboard .main-content .contents .rows .column.c9 {
+    border-color:#F39C12;
+}
+.p-pembangunan.dashboard .main-content .contents .rows .column.c10 {
     border-color: #4ECDC4;
 }
 
@@ -173,6 +179,48 @@ a:hover {
     line-height: 140%;
     min-height: 20%;
     margin-bottom: 0;
+}
+
+/* Ripple Touch Effect */
+.material_ripple{
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    overflow: hidden;
+}
+
+.ripple-animate{
+    position: absolute;
+    -webkit-animation: norah-ripples 2s;
+    animation: norah-ripples 2s;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes norah-ripples {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.49;
+    }
+    100% {
+        -webkit-transform: scale(100);
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+
+@keyframes norah-ripples {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.49;
+    }
+    100% {
+        -webkit-transform: scale(100);
+        transform: scale(100);
+        opacity: 0;
+    }
 }
 
 /* Modal */
@@ -210,7 +258,7 @@ a:hover {
     transform: translate(0, 0);
     height: 100vh;
 }
-.my-player5-dimensions.vjs-fluid, .my-player2-dimensions.vjs-fluid {
+.my-player3-dimensions.vjs-fluid, .my-player4-dimensions.vjs-fluid {
     padding-top: 100vh !important;
 }
 .overlay p {
@@ -251,6 +299,7 @@ a:hover {
         right: 35px;
     }
 }
+
 
 /* Footer */
 

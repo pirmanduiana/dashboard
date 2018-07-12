@@ -81,7 +81,10 @@
     {{ Html::script('assets/js/full.js') }}
 
     {{ Html::script('assets/js/material_ripple.js') }}
-
+    <script>
+        $('.material_ripple').material_ripple();
+    </script>
+    
     @yield('scripts')
 </body>
 <!-- END BODY -->
