@@ -5,7 +5,7 @@ $(document).ready(function(){
         box1.wakeup();
     });
     $(".column.c2").on("click", function(){
-        box2.wakeup();
+        box2.play();
     });
     $(".column.c3").on("click", function(){
         box3.wakeup();
@@ -58,8 +58,9 @@ var box2 = {
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box2.pause();");
         var options = {};
-        var player = videojs('my-player2', options, function onPlayerReady() {            
+        player2 = videojs('my-player2', options, function onPlayerReady() {            
             this.play();       
         });
         return true;
@@ -70,9 +71,7 @@ var box2 = {
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
         $(".overlay a").css("display","block");
         $(".overlay.overlay-content").css("padding","0px;");
-        $(".video-js").each(function(key,item) {
-            $(this)[key].player.pause();    
-        });
+        player2.pause();
         return true;
     }
 };
@@ -131,8 +130,9 @@ var box5 = {
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box5.pause();");
         var options = {};
-        var player = videojs('my-player', options, function onPlayerReady() {            
+        player5 = videojs('my-player5', options, function onPlayerReady() {            
             this.play();       
         });
         return true;
@@ -143,9 +143,7 @@ var box5 = {
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
         $(".overlay a").css("display","block");
         $(".overlay.overlay-content").css("padding","0px;");
-        $(".video-js").each(function(key,item) {
-            $(this)[key].player.pause();    
-        });
+        player5.pause();
         return true;
     }
 };
@@ -198,23 +196,15 @@ var box7 = {
 
 var box8 = {
     "wakeup" : function(){
-        document.getElementById("myNav_").style.height = "100vh";
-        $.ajax({
-            url: url_badungmap,
-            method: 'get',
-            dataType: 'html',
-            beforeSend: (function(){
-                $("#dvModalBox_").html("Loading...");
-            })
-        })
-        .done(function (html) {
-            $("#dvModalBox_").html(html);
-        })
-        .fail(function(xhr){
-            console.log(xhr);
-        });
+        params  = 'width='+screen.width;
+        params += ', height='+screen.height;
+        params += ', fullscreen=yes';
+        var myWindow = window.open("http://map.badungkab.go.id", "popupWindow", params);
+        myWindow.onload = function(){
+            this.alert("fdjsla");
+        };
     },
     "sleep" : function(){
-        document.getElementById("myNav_").style.height = "0%";
+        myWindow.close();
     }
 };
