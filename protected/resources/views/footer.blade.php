@@ -6,27 +6,34 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: rgb(0,0,0);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(0, 0, 0, .9);
             overflow-y: hidden;
             transition: 0.5s;
         }
 
         .overlay a {
-            
+            color:#ffffff;
+            position: absolute;
+            font-size: 60px;
+            z-index: 999;
+            background-color: rgba(255,255,255, .2);
+            color: #ffffff;
+            right: 2%;
+            top: 5%;
+            text-decoration: none;
+            transition: 0.3s;
         }
         .overlay .overlay-content {
             position: relative;
             top: 0;
             width: 100%;
-            text-align: center;
             transform: translate(0, 0);
             height: 100vh;
         }
         .my-player-dimensions.vjs-fluid {
             padding-top: 100vh !important;
         }
-        .overlay p, .overlay a {
+        .overlay p {
             padding: 8px;
             text-decoration: none;
             font-size: 36px;
@@ -35,14 +42,26 @@
             transition: 0.3s;
         }
         .overlay a:hover, .overlay a:focus {
-            color: #040404;
+            background-color: rgba(255,255,255, .5);
         }
-        .overlay .closebtn {
-            /* position: absolute; */
-            top: 20px;
-            right: 45px;
-            font-size: 60px;
-        }   
+
+        .overlay .text-align p{
+            text-align: center;
+            color:#ffffff;
+        }
+
+        #myNav_ .overlay-content {
+            overflow:auto;
+        } 
+
+        #myNav_.overlay .overlay-content {
+            height: calc(90vh - 20px);
+        }  
+
+        #myNav_.overlay .overlay-content #dvModalBox_ {
+            min-height: 100%;
+        }
+
         @media screen and (max-height: 450px) {
             .overlay {overflow-y: auto;}
             .overlay a {font-size: 20px}
@@ -84,7 +103,9 @@
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox2">
-                <!-- video embed -->
+                <video id='my-player2' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
+                    <source src='{{ url("assets/videos/sequence_2.mp4") }}' type='video/mp4'></source>
+                </video>
             </div>
         </div>
     </div>            
