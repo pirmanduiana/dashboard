@@ -44,36 +44,6 @@ $(document).ready(function(){
     });    
 });
 
-var play = {
-    "all" : function(){
-        document.getElementById("myNavs").style.height = "100vh";
-        var player = videojs('my-playlist');
-        player.playlist([   
-            {
-            sources: [{
-                src: url_player1,
-                type: 'video/mp4'
-            }],
-            poster: 'http://media.w3.org/2010/05/sintel/poster.png'
-            }, {
-            sources: [{
-                src: url_player2,
-                type: 'video/mp4'
-            }],
-            poster: 'http://media.w3.org/2010/05/bunny/poster.png'
-            }, {
-            sources: [{
-                src: url_player3,
-                type: 'video/mp4'
-            }],
-            poster: 'http://www.videojs.com/img/poster.jpg'
-            }
-        ]);
-        // Play through the playlist automatically.
-        // player.playlist.autoadvance(0);
-
-    }
-};
 
 var box1 = {
     "play" : function() {

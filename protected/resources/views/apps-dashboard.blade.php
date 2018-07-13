@@ -127,20 +127,6 @@
         </div>
     </div>            
     <!-- End Modal -->
-
-    <!-- Modal Box Video 6 -->
-    <div id="myNavs" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox6">
-                <video id='my-playlist' class='video-js'>
-                    <!-- video rendered here -->
-                </video>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
-
 @endsection
 
 
