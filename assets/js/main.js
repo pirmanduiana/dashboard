@@ -72,6 +72,33 @@ $(document).ready(function(){
     });
 });
 
+
+var isPlaying = false;
+var players = {
+    "play" : function(video_url){
+        player1 = videojs('apps-video2', {
+            preload: 'auto',
+            controls: true,
+            fluid: true,
+            loop: true,
+            sources: [{
+                src: video_url,
+                type: 'video/mp4'
+            }]
+        });
+        if (!isPlaying) {
+            player1.play();         
+            isPlaying = true;
+        }
+        return true;
+    },
+    "pause" : function(){
+        isPlaying = false;
+        location.reload();
+    }
+}
+
+
 /* HTML : Visi Misi */
 var box1 = {
     "wakeup" : function(){
@@ -123,25 +150,21 @@ var box2 = {
 /* Video : Slideshow Foto */
 var box3 = {
     "play" : function() {
-        document.getElementById("myNav3").style.height = "100vh";
+        document.getElementById("myNav2").style.height = "100vh";
         $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","20px;");
         $("#aBackButton").attr("onclick","box3.pause();");
-        var options = {};
-        player3 = videojs('my-player3', options, function onPlayerReady() {            
-            this.play();       
-        });
-        return true;
+        players.play(url_video1);
     },
     "pause" : function() {
-        document.getElementById("myNav3").style.height = "0%";
+        document.getElementById("myNav2").style.height = "0%";
         $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","0px;");
-        player3.pause();
+        players.pause();
         return true;
     }
 };
@@ -149,26 +172,22 @@ var box3 = {
 /* Video : Profile */
 var box4 = { 
     "play" : function(){
-        document.getElementById("myNav4").style.height = "100vh";
+        document.getElementById("myNav2").style.height = "100vh";
         $(".footer").css("")
         $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","20px;");
         $("#aBackButton").attr("onclick","box4.pause();");
-        var options = {};
-        player4 = videojs('my-player4', options, function onPlayerReady() {            
-            this.play();       
-        });
-        return true;
+        players.play(url_video2);
     },
     "pause" : function() {
-        document.getElementById("myNav4").style.height = "0%";
+        document.getElementById("myNav2").style.height = "0%";
         $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","0px;");
-        player4.pause();
+        players.pause();
         return true;
     }
 };

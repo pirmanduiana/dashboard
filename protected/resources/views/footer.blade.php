@@ -10,31 +10,20 @@
         <p> © Copyright 2018 Dinas Komunikasi dan Informatika Kabupaten Badung</p>
     </div>
 
-    <!-- Modal Box Video 3 -->
-    <div id="myNav3" class="overlay fullModal">
+    <!-- Modal Box Video 1 -->
+    <div id="myNav2" class="overlay fullModal">
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox2">
-                <video id='my-player3' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
-                    <source src='{{ url("assets/videos/sequence_2.mp4") }}' type='video/mp4'></source>
+                <video id='apps-video2' class='video-js'>
+                    <!-- video rendered here -->
                 </video>
             </div>
         </div>
     </div>            
     <!-- End Modal -->
-
-    <!-- Modal Box Video 4 -->
-    <div id="myNav4" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox5">
-                <video id='my-player4' class='video-js' controls preload='auto' poster='//vjs.zencdn.net/v/oceans.png' data-setup='{"fluid": true}'>
-                    <source src='{{ url("assets/videos/sequence_1.mp4") }}' type='video/mp4'></source>
-                </video>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
+    <script>var url_video1 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>
+    <script>var url_video2 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>     
 
     <!-- Modal Box lainnya -->
     <div id="myNav_" class="overlay fullModal">
