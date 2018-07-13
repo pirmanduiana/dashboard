@@ -53,80 +53,19 @@
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox1">
-                <video id='my-player1' class='video-js'>
+                <video id='apps-video1' class='video-js'>
                     <!-- video rendered here -->
                 </video>
-                <script>var url_player1 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>
             </div>
         </div>
     </div>            
-    <!-- End Modal -->
-    <!-- Modal Box Video 2 -->
-    <div id="myNav2" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox2">
-                <video id='my-player2' class='video-js'>
-                    <!-- video rendered here -->
-                </video>
-                <script>var url_player2 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
-    <!-- Modal Box Video 3 -->
-    <div id="myNav3" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox3">
-                <video id='my-player3' class='video-js'>
-                    <!-- video rendered here -->
-                </video>
-                <script>var url_player3 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
-
-    <!-- Modal Box Video 4 -->
-    <div id="myNav4" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox4">
-                <video id='my-player4' class='video-js'>
-                    <!-- video rendered here -->
-                </video>
-                <script>var url_player4 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
-    <!-- Modal Box Video 5 -->
-    <div id="myNav5" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox5">
-                <video id='my-player5' class='video-js'>
-                    <!-- video rendered here -->
-                </video>
-                <script>var url_player5 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
-    <!-- Modal Box Video 6 -->
-    <div id="myNav6" class="overlay fullModal">
-        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
-        <div class="overlay-content">
-            <div class="align-center" id="dvModalBox6">
-                <video id='my-player6' class='video-js'>
-                    <!-- video rendered here -->
-                </video>
-                <script>var url_player6 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
-            </div>
-        </div>
-    </div>            
-    <!-- End Modal -->
+    <!-- End Modal -->    
+    <script>var url_player1 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>
+    <script>var url_player2 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>    
+    <script>var url_player3 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>            
+    <script>var url_player4 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>        
+    <script>var url_player5 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>            
+    <script>var url_player6 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>    
 @endsection
 
 
