@@ -19,3 +19,14 @@ Route::get('/badungkab', 'GetController@badungkab')->name('get.badungkab');
 Route::get('/kominfo', 'GetController@kominfo')->name('get.kominfo');
 Route::get('/ppid', 'GetController@ppid')->name('get.ppid');
 Route::get('/badungmap', 'GetController@badungmap')->name('get.badungmap');
+
+Route::group( ['prefix'=>'apps'], function()
+{
+    Route::get('/', 'AppsController@index');
+    Route::get('/ekinerja', function() {});
+    Route::get('/absonl', function() {});
+    Route::get('/absmob', function() {});
+    Route::get('/bwise', function() {});
+    Route::get('/esurat', function() {});
+    Route::get('/eagenda', function() {});
+});

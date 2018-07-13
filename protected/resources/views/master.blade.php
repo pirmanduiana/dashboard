@@ -42,7 +42,8 @@
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video-js.css" rel="stylesheet"> -->
   {{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video-js.css') }}
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js"></script> -->
-  {{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js') }} 
+  {{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js') }}
+  {{ Html::script('assets/js/videojs/videojs.playlist.js') }}
   
   {{ Html::script('assets/js/date_time.js') }}
 </head>
