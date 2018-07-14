@@ -4,9 +4,9 @@ var idleTime = 0;
 var timeToAutoPlay = 6;
 function timerIncrement() {
     idleTime = idleTime + 1;
-    if (!isPlaying) {        
+    if (!isPlaying) {
         if (idleTime == timeToAutoPlay) {
-            console.log("iddle");
+            console.log(idleTime);
             document.getElementById("myNavPl").style.height = "100vh";
             $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
             $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
@@ -15,6 +15,8 @@ function timerIncrement() {
             $("#aBackButton").attr("onclick","box3.pause();").css("padding","30%");
             playList();
         }
+    } else {
+        idleTime = 0;
     }
 
 }
@@ -49,7 +51,7 @@ var playList = function() {
 
 $(document).ready(function()
 {
-    var idleInterval = setInterval(timerIncrement, 2000); // 60000 = 1 minute
+    var idleInterval = setInterval(timerIncrement, 2000);
 
     $(".column.c1").on("click", function(){
         setTimeout(
@@ -162,6 +164,7 @@ var box1 = {
         })
         .done(function (html) {
             $("#dvModalBox_").html(html);
+            isPlaying = true;
         })
         .fail(function(xhr){
             console.log(xhr);
@@ -169,6 +172,7 @@ var box1 = {
     },
     "sleep" : function(){
         document.getElementById("myNav_").style.height = "0%";
+        isPlaying = false;
     }
 };
 
@@ -186,6 +190,7 @@ var box2 = {
         })
         .done(function (html) {
             $("#dvModalBox_").html(html);
+            isPlaying = true;
         })
         .fail(function(xhr){
             console.log(xhr);
@@ -193,6 +198,7 @@ var box2 = {
     },
     "sleep" : function(){
         document.getElementById("myNav_").style.height = "0%";
+        isPlaying = false;
     }
 };
 
@@ -251,9 +257,10 @@ var box5 = {
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
+        isPlaying = true;
     },
     "sleep" : function(){
-        myWindow.close();
+        isPlaying = false;
     }
 };
 
@@ -267,9 +274,10 @@ var box6 = {
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
+        isPlaying = true;
     },
     "sleep" : function(){
-        myWindow.close();
+        isPlaying = false;
     }
 };
 
@@ -283,9 +291,10 @@ var box7 = {
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
+        isPlaying = true;
     },
     "sleep" : function(){
-        myWindow.close();
+        isPlaying = false;
     }
 };
 
@@ -299,9 +308,10 @@ var box8 = {
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
+        isPlaying = true;
     },
     "sleep" : function(){
-        myWindow.close();
+        isPlaying = false;
     }
 };
 
@@ -315,9 +325,10 @@ var box9 = {
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
+        isPlaying = true;
     },
     "sleep" : function(){
-        myWindow.close();
+        isPlaying = false;
     }
 };
 
@@ -331,8 +342,9 @@ var box10 = {
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
+        isPlaying = true;
     },
     "sleep" : function(){
-        myWindow.close();
+        isPlaying = false;
     }
 };
