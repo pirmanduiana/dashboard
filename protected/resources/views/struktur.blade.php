@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)https://www.kominfo.go.id/struktur-organisasi -->
 <html lang="en" class="" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Kementerian Komunikasi dan Informatika</title>
 
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
- <!-- stylesheet
-<link href="./Kementerian Komunikasi dan Informatika_files/global.css" rel="stylesheet" type="text/css">
-<link href="./Kementerian Komunikasi dan Informatika_files/styles.css" rel="stylesheet" type="text/css">
--->
 <!-- ubbah -->
 {{ Html::style('assets/pages/css/globalstruktur.css') }}
 <!-- ubbah -->
@@ -118,8 +113,8 @@
                                             <li>
 											  <input type="checkbox" id="c3">
 													<label for="c3" class="tree_label"><font style="font-size:20px">Bidang Pengelolaan Informasi Publik</font></label>
-                                                    <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pip">Profil Lengkap</button>
-                                                    <!-- ESELON 2 -->
+                                                    <!--<button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pip">Profil Lengkap</button>
+                                                     ESELON 2 -->
 												<ul>
 													<li><span class="tree_label">Seksi Layanan Informasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#lip">Profil Lengkap</button></li>
 													<li><span class="tree_label">Seksi Pengelolaan Informasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#spip">Profil Lengkap</button></li>
@@ -166,8 +161,9 @@
                                             <li>
                                                 <input type="checkbox" id="c11">
                                                 <label for="c11" class="tree_label"><font style="font-size:20px">Bidang Persandian dan Statistik</font></label>
-                                                <!-- ESELON 2 -->
+                                                <!-- ESELON 2
                                                 <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#persandian">Profil Lengkap</button>
+                                               -->
                                                 <ul>
                                                     <li><span class="tree_label">Seksi Tata Kelola Persandian</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kelolapersandian">Profil Lengkap</button></li>
                                                     <li><span class="tree_label">Seksi Operasional Pengamanan Persandian</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pengamanankesandian">Profil Lengkap</button></li>
@@ -220,7 +216,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/sekdis/kabid.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='assets/images/pegawai/sekdis/sekdis.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -278,7 +274,6 @@
                             </div>
                             <div class="desc">Jabatan : Sub Bag Umum dan Kepeg</div>
                             <div class="desc">NIP. 196307091986122001</div>
-
                         </div>
                         <button type="button" class=" btn btn-danger" data-dismiss="modal">Tutup</button>
                     </div>

@@ -7463,6 +7463,9 @@ input[type="submit"], button[type="submit"], input[type="reset"] {
 .ui-tooltip-tipsy .ui-tooltip-titlebar .ui-state-hover{
 	border-color: #303030;
 }
+.ui-tooltip-tipped{
+
+}
 .ui-tooltip-tipped .ui-tooltip-titlebar,.ui-tooltip-tipped .ui-tooltip-content{
 	border: 3px solid #959FA9;
 }
