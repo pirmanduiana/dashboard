@@ -6,14 +6,13 @@ use Illuminate\Http\Request;
 
 class GetController extends Controller
 {
-    
+
     public function visimisi(){
         return view("visimisi");
     }
 
     public function struktur(){
-        $url = "https://badungkab.go.id/index.php/menu/6/Organisasi---SKPD.html";
-        echo file_get_contents($url);
+        return view('struktur');
     }
 
     public function badungkab(){

@@ -89,7 +89,7 @@ var box1 = {
         })
         .fail(function(xhr){
             console.log(xhr);
-        });        
+        });
     },
     "sleep" : function(){
         document.getElementById("myNav_").style.height = "0%";
@@ -113,7 +113,7 @@ var box2 = {
         })
         .fail(function(xhr){
             console.log(xhr);
-        });        
+        });
     },
     "sleep" : function(){
         document.getElementById("myNav_").style.height = "0%";
@@ -130,8 +130,8 @@ var box3 = {
         $(".overlay.overlay-content").css("padding","20px;");
         $("#aBackButton").attr("onclick","box3.pause();");
         var options = {};
-        player3 = videojs('my-player3', options, function onPlayerReady() {            
-            this.play();       
+        player3 = videojs('my-player3', options, function onPlayerReady() {
+            this.play();
         });
         return true;
     },
@@ -147,7 +147,7 @@ var box3 = {
 };
 
 /* Video : Profile */
-var box4 = { 
+var box4 = {
     "play" : function(){
         document.getElementById("myNav4").style.height = "100vh";
         $(".footer").css("")
@@ -157,8 +157,8 @@ var box4 = {
         $(".overlay.overlay-content").css("padding","20px;");
         $("#aBackButton").attr("onclick","box4.pause();");
         var options = {};
-        player4 = videojs('my-player4', options, function onPlayerReady() {            
-            this.play();       
+        player4 = videojs('my-player4', options, function onPlayerReady() {
+            this.play();
         });
         return true;
     },
