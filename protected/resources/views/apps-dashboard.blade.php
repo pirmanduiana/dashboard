@@ -65,7 +65,21 @@
     <script>var url_player3 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>            
     <script>var url_player4 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>        
     <script>var url_player5 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>            
-    <script>var url_player6 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>    
+    <script>var url_player6 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
+
+    <!-- playlist video -->
+    <!-- Modal Box Video 1 -->
+    <div id="myNavPl" class="overlay fullModal">
+        <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
+        <div class="overlay-content">
+            <div class="align-center" id="dvModalBoxPl">
+                <video id="apps-playlist" class="video-js">
+                </video>
+            </div>
+        </div>
+    </div>            
+    <!-- End Modal -->
+
 @endsection
 
 
