@@ -2,7 +2,7 @@
 @section('dashboard')
     <div class="section background">
         <div class="contents">
-            <div class="rows row-first">
+            <div class="rows">
                 <a class="column c1 material_ripple" href="#" data-color="rgba(255,255,255, .4)">
                     <div class="image">
                         <img src="./assets/images/icons/ico-visimisi.png" alt="">
@@ -38,7 +38,7 @@
                     <h2>Website Pemkab</h2>
                 </a>
             </div>
-            <div class="rows row-second">
+            <div class="rows">
                 <a class="column c6 material_ripple" href="#">
                     <div class="image">
                         <img src="./assets/images/icons/ico-pemkab.png" alt="">

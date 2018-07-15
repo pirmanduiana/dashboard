@@ -1,187 +1,172 @@
-<!DOCTYPE html>
-<html lang="en" class="" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Kementerian Komunikasi dan Informatika</title>
-
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
 <!-- ubbah -->
 {{ Html::style('assets/pages/css/globalstruktur.css') }}
 <!-- ubbah -->
 {{ Html::style('assets/pages/css/stylesstruktur.css') }}
 <style>
-        .overlay {
-            height: 0%;
-            width: 100%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgba(255, 255, 255, 0.9);
-            overflow-y: hidden;
-            transition: 0.5s;
-        }
-        .overlay a {
-            position: absolute;
-            font-size: 40px;
-            z-index: 999;
-            background-color: #e02222;
-            color: #ffffff;
-            right: 2%;
-            top: 5%;
-            text-decoration: none;
-            transition: 0.3s;
-            width: 50px;
-            text-align: center;
-            border-radius: 3px;
-        }
-        .overlay a:hover, .overlay a:focus {
-            background-color: #e02222;
-        }
-
-        #myNav_.overlay .overlay-content {
-            height: 100%;
-        }
-
-
-        .modal-backdrop {
-            position: static;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 1040;
-            background-color: #ffffff;
-        }
-
-        .modal {
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .overlay a {
+        position: absolute;
+        font-size: 40px;
+        z-index: 999;
+        background-color: #e02222;
+        color: #ffffff;
+        right: 2%;
+        top: 5%;
+        text-decoration: none;
+        transition: 0.3s;
+        width: 50px;
         text-align: center;
-        }
+        border-radius: 3px;
+    }
+    .overlay a:hover, .overlay a:focus {
+        background-color: #e02222;
+    }
 
-        @media screen and (min-width: 768px) {
-        .modal:before {
-            display: inline-block;
-            vertical-align: middle;
-            content: " ";
-            height: 100%;
-        }
-        }
+    #myNav_.overlay .overlay-content {
+        height: 100%;
+    }
 
-        .modal-dialog {
+
+    .modal-backdrop {
+        position: static;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: #ffffff;
+    }
+
+    .modal {
+    text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    .modal:before {
         display: inline-block;
-        text-align: left;
         vertical-align: middle;
-        }
+        content: " ";
+        height: 100%;
+    }
+    }
+
+    .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    }
 
 </style>
-<body class="loaded" style="position: relative; min-height: 100%; top: 0px;">
-	<!-- BLOCK "TYPE container" -->
-	<div class="blocks-container">
-		<div class="site_container">
-				<!-- Start Page -->
-				<div class="container blog-wrapper" style="margin-top:-40px;">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="blog-entry wow fadeInLeft animated animated" style="visibility: visible;">
-								<div class="content">
-                                    <label style="font-size:28px"> <b>STRUKTUR ORGANISASI</b></label><br>
-                                    <font style="font-size:24px"> <b>DINAS KOMUNIKASI DAN INFORMATIKA KABUPATEN BADUNG</b></font>
-                                    <div class="trees">
-									<ul class="tree">
-									  <li>
-										<!-- MENTERI -->
-										<input type="checkbox" checked="checked" id="c1">
-                                            <label class="tree_label" for="c1"><font style="font-size:20px">Kepala Dinas</font></label>
-                                            <!--<button class="btn-info" style="padding:5px" data-target="#myModal">Profil Lengkap</button>
-                                             Button trigger modal -->
-                                            <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kadis">Profil Lengkap</button>
-										<!-- SATKER -->
-										<ul>
-                                            <li>
-                                                <!-- ESELON 1 -->
-                                                <input type="checkbox" id="c2">
-                                                    <label for="c2" class="tree_label" ><font style="font-size:20px">Sekretariat</font></label>
-                                                    <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#sekretaris">Profil Lengkap</button>
-                                                <!-- ESELON 2 -->
-                                                <ul>
-                                                    <li><span class="tree_label"><b>Sub Bag Perencanaan dan Pelaporan</b></span>  <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#perencanaan">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label"><b>Sub Bag Umum dan Kepeg</b></span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#umum">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label"><b>Sub Bag Keuangan</b></span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#keuangan">Profil Lengkap</button></li>
-                                                </ul>
-                                                <!-- ESELON 1 -->
-                                            </li>
-                                            <li>
-											  <input type="checkbox" id="c3">
-													<label for="c3" class="tree_label"><font style="font-size:20px">Bidang Pengelolaan Informasi Publik</font></label>
-                                                    <!--<button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pip">Profil Lengkap</button>
-                                                     ESELON 2 -->
-												<ul>
-													<li><span class="tree_label">Seksi Layanan Informasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#lip">Profil Lengkap</button></li>
-													<li><span class="tree_label">Seksi Pengelolaan Informasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#spip">Profil Lengkap</button></li>
-													<li><span class="tree_label">Seksi Media Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#mp">Profil Lengkap</button></li>
-												</ul>
-										    </li>
-											<!-- ESELON 1 -->
-                                            <li>
-                                                <input type="checkbox" id="c5">
-                                                    <label for="c5" class="tree_label"><font style="font-size:20px">Bidang Pengelolaan Komunikasi Publik</font></label>
-                                                    <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pkp">Profil Lengkap</button>
-                                                    <!-- ESELON 2 -->
-                                                <ul>
-                                                    <li><span class="tree_label">Seksi Pengelolaan Opini Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pop">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label">Seksi Pemberdayaan Kelompok Komunikasi Masyarakat</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kkm">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label">Seksi Kemitraan Komunikasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#skkp">Profil Lengkap</button></li>
-                                                </ul>
-                                            </li>
-                                            <!-- ESELON 1 -->
-                                            <li>
-                                                <input type="checkbox" id="c7">
-                                                <label for="c7" class="tree_label"><font style="font-size:20px">Bidang Teknologi Informasi dan Komunikasi</font></label>
-                                                <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#tik">Profil Lengkap</button>
-                                                <!-- ESELON 2 -->
-                                                <ul>
-                                                    <li><span class="tree_label">Seksi Infrastruktur dan Teknologi</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#idt">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label">Seksi Pengelolaan Data dan Integrasi Sistem Informasi </span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#data">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label">Seksi Keamanan Informasi dan Telekomunikasi</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#inte">Profil Lengkap</button></li>
-                                                </ul>
-                                            </li>
-                                            <!-- ESELON 1 -->
-                                            <li>
-                                                <input type="checkbox" id="c9">
-                                                    <label for="c9" class="tree_label"><font style="font-size:20px">Bidang Layanan e-Gov</font></label>
-                                                    <!-- ESELON 2 -->
-                                                    <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#egov">Profil Lengkap</button>
-                                                <ul>
-                                                        <li><span class="tree_label">Seksi Pengembangan Aplikasi</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pengembanganaplikasi">Profil Lengkap</button></li>
-                                                        <li><span class="tree_label">Seksi Pengembangan Ekosistem e-Gov</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#ekosistemegov">Profil Lengkap</button></li>
-                                                        <li><span class="tree_label">Seksi Tata Kelola e-Gov</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#tatakelola">Profil Lengkap</button></li>
-                                                    </ul>
-                                            </li>
-                                            <!-- ESELON 1 -->
-                                            <li>
-                                                <input type="checkbox" id="c11">
-                                                <label for="c11" class="tree_label"><font style="font-size:20px">Bidang Persandian dan Statistik</font></label>
-                                                <!-- ESELON 2
-                                                <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#persandian">Profil Lengkap</button>
-                                               -->
-                                                <ul>
-                                                    <li><span class="tree_label">Seksi Tata Kelola Persandian</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kelolapersandian">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label">Seksi Operasional Pengamanan Persandian</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pengamanankesandian">Profil Lengkap</button></li>
-                                                    <li><span class="tree_label">Seksi Statistik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#statistik">Profil Lengkap</button></li>
-                                                </ul>
-                                            </li>
-										</ul>
-										<!-- END SATKER -->
-									  </li>
-									</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-		</div>
+
+<div class="container blog-wrapper struktur">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="blog-entry wow fadeInLeft animated animated" style="visibility: visible;">
+                <div class="content">
+                    <h2>STRUKTUR ORGANISASI</h2>
+                    <h1>DINAS KOMUNIKASI DAN INFORMATIKA KABUPATEN BADUNG</h1>
+                    <div class="trees">
+                        <ul class="tree">
+                            <li>
+                            <!-- MENTERI -->
+                            <input type="checkbox" checked="checked" id="c1">
+                                <label class="tree_label" for="c1">Kepala Dinas</label>
+                                <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kadis">Profil Lengkap</button>
+                            <!-- SATKER -->
+                            <ul>
+                                <li>
+                                    <!-- ESELON 1 -->
+                                    <input type="checkbox" id="c2">
+                                        <label for="c2" class="tree_label">Sekretariat</label>
+                                        <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#sekretaris">Profil Lengkap</button>
+                                    <!-- ESELON 2 -->
+                                    <ul>
+                                        <li><span class="tree_label"><b>Sub Bag Perencanaan dan Pelaporan</b></span>  <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#perencanaan">Profil Lengkap</button></li>
+                                        <li><span class="tree_label"><b>Sub Bag Umum dan Kepeg</b></span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#umum">Profil Lengkap</button></li>
+                                        <li><span class="tree_label"><b>Sub Bag Keuangan</b></span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#keuangan">Profil Lengkap</button></li>
+                                    </ul>
+                                    <!-- ESELON 1 -->
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c3">
+                                        <label for="c3" class="tree_label">Bidang Pengelolaan Informasi Publik</label>
+                                        <!--<button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pip">Profil Lengkap</button>
+                                            ESELON 2 -->
+                                    <ul>
+                                        <li><span class="tree_label">Seksi Layanan Informasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#lip">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Pengelolaan Informasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#spip">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Media Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#mp">Profil Lengkap</button></li>
+                                    </ul>
+                                </li>
+                                <!-- ESELON 1 -->
+                                <li>
+                                    <input type="checkbox" id="c5">
+                                        <label for="c5" class="tree_label">Bidang Pengelolaan Komunikasi Publik</label>
+                                        <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pkp">Profil Lengkap</button>
+                                        <!-- ESELON 2 -->
+                                    <ul>
+                                        <li><span class="tree_label">Seksi Pengelolaan Opini Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pop">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Pemberdayaan Kelompok Komunikasi Masyarakat</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kkm">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Kemitraan Komunikasi Publik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#skkp">Profil Lengkap</button></li>
+                                    </ul>
+                                </li>
+                                <!-- ESELON 1 -->
+                                <li>
+                                    <input type="checkbox" id="c7">
+                                    <label for="c7" class="tree_label">Bidang Teknologi Informasi dan Komunikasi</label>
+                                    <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#tik">Profil Lengkap</button>
+                                    <!-- ESELON 2 -->
+                                    <ul>
+                                        <li><span class="tree_label">Seksi Infrastruktur dan Teknologi</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#idt">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Pengelolaan Data dan Integrasi Sistem Informasi </span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#data">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Keamanan Informasi dan Telekomunikasi</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#inte">Profil Lengkap</button></li>
+                                    </ul>
+                                </li>
+                                <!-- ESELON 1 -->
+                                <li>
+                                    <input type="checkbox" id="c9">
+                                        <label for="c9" class="tree_label">Bidang Layanan e-Gov</label>
+                                        <!-- ESELON 2 -->
+                                        <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#egov">Profil Lengkap</button>
+                                    <ul>
+                                            <li><span class="tree_label">Seksi Pengembangan Aplikasi</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pengembanganaplikasi">Profil Lengkap</button></li>
+                                            <li><span class="tree_label">Seksi Pengembangan Ekosistem e-Gov</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#ekosistemegov">Profil Lengkap</button></li>
+                                            <li><span class="tree_label">Seksi Tata Kelola e-Gov</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#tatakelola">Profil Lengkap</button></li>
+                                        </ul>
+                                </li>
+                                <!-- ESELON 1 -->
+                                <li>
+                                    <input type="checkbox" id="c11">
+                                    <label for="c11" class="tree_label">Bidang Persandian dan Statistik</label>
+                                    <!-- ESELON 2
+                                    <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#persandian">Profil Lengkap</button>
+                                    -->
+                                    <ul>
+                                        <li><span class="tree_label">Seksi Tata Kelola Persandian</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#kelolapersandian">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Operasional Pengamanan Persandian</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#pengamanankesandian">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Seksi Statistik</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#statistik">Profil Lengkap</button></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- END SATKER -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+	
 
     <!-- Modal kepala kadis-->
     <div class="modal fade" id="kadis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

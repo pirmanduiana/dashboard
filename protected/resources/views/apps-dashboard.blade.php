@@ -1,46 +1,45 @@
 @extends('master')
 @section('dashboard')
-    <div class="section background">
+    <div class="section background apps">
         <div class="contents">
             <div class="rows row-first">
                 <a class="column c1 material_ripple" href="#" data-color="rgba(255,255,255, .4)">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-visimisi.png" alt="">
+                        <img src="./assets/images/icons/ico-ekinerja.png" alt="">
                     </div>
                     <h2>e-Kinerja</h2>
                 </a>
 
                 <a class="column c2 material_ripple" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-organisasi.png" alt="">
+                        <img src="./assets/images/icons/ico-absensi-online.png" alt="">
                     </div>
                     <h2>Absensi Online</h2>
                 </a>
 
                 <a class="column c3 material_ripple" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-foto.png" alt="">
+                        <img src="./assets/images/icons/ico-absensi-mobile.png" alt="">
                     </div>
                     <h2>Absensi Mobile</h2>
+                </a>
+                <a class="column c4 material_ripple" href="#">
+                    <div class="image">
+                        <img src="./assets/images/icons/ico-bwise.png" alt="">
+                    </div>
+                    <h2>b-wise</h2>
                 </a>                
             </div>
             <div class="rows row-second">
-                <a class="column c4 material_ripple" href="#">
-                    <div class="image">
-                        <img src="./assets/images/icons/ico-video.png" alt="">
-                    </div>
-                    <h2>b-wise</h2>
-                </a>
-                
                 <a class="column c5 material_ripple" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-pemkab.png" alt="">
+                        <img src="./assets/images/icons/ico-esurat.png" alt="">
                     </div>
                     <h2>e-Surat</h2>
                 </a>
                 <a class="column c6 material_ripple" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-pemkab.png" alt="">
+                        <img src="./assets/images/icons/ico-eagenda.png" alt="">
                     </div>
                     <h2>e-Agenda</h2>
                 </a>                
