@@ -11,6 +11,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
     color:#222;
     font-family: 'Open Sans', Helvetica, sans-serif;
+    margin-bottom:0;
 }
 
 a, p {
@@ -30,6 +31,10 @@ a:hover {
     background-image: url('../assets/images/bb_puspem.jpg');
     background-size:cover;
     background-position: center;
+}
+
+.p-pembangunan.dashboard.apps {
+    background-image: url('../assets/images/bb_application.png');
 }
 
 /* Header */
@@ -56,6 +61,14 @@ a:hover {
     flex: 1;
 }
 
+.p-pembangunan.dashboard .header .main-header .sites-title {
+    display: none;
+}
+
+.p-pembangunan.dashboard.apps .header .main-header .sites-title {
+    display: inherit;
+}
+
 .p-pembangunan.dashboard .header .main-header .sites-logo h1 {
     color:rgba(255,255,255, .9);
     font-size:16px;
@@ -63,6 +76,14 @@ a:hover {
     letter-spacing: 1px;
     text-transform: capitalize;
     margin:0;
+}
+
+.p-pembangunan.dashboard.apps .header .main-header .sites-title h2 {
+    color: rgba(255,255,255, .9);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .p-pembangunan.dashboard .header .main-header .date {
@@ -317,7 +338,6 @@ a:hover {
     font-weight: 700;
     text-transform: uppercase;
     color: #222;
-
 }
 
 .p-pembangunan.dashboard .struktur h2 {
@@ -413,7 +433,7 @@ a:hover {
     flex-direction: row;
     flex: 1;
     min-height: 10vh;
-    padding: 0 calc(8% - 10px);
+    padding: 0 6%;
 }
 
 .p-pembangunan.dashboard .footer .main-btn-action {
@@ -433,16 +453,8 @@ a:hover {
     padding: 5%;
 }
 
-.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.prev {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-right: solid 1px rgba(255,255,255, .1);
-}
-
-.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.next {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-left: solid 1px rgba(255,255,255, .1);
+.p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action.home {
+    border-radius: 5px;
 }
 
 .p-pembangunan.dashboard .footer .main-btn-action .content-btn-action .btn-action .fa {
@@ -471,6 +483,10 @@ a:hover {
     .p-pembangunan.dashboard .header .main-header .date p,
     .p-pembangunan.dashboard .main-content .contents .rows .column h2 {
         font-size: 50px;
+    }
+
+    .p-pembangunan.dashboard.apps .header .main-header .sites-logo h2 {
+        font-size: 55px;
     }
 
     .p-pembangunan.dashboard .main-content .contents .rows .column h2 {

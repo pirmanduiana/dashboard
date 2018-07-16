@@ -51,7 +51,7 @@ var playList = function() {
 
 $(document).ready(function()
 {
-    var idleInterval = setInterval(timerIncrement, 2000);
+    //var idleInterval = setInterval(timerIncrement, 2000);
 
     $(".column.c1").on("click", function(){
         setTimeout(
@@ -149,7 +149,6 @@ var players = {
     }
 }
 
-
 /* HTML : Visi Misi */
 var box1 = {
     "wakeup" : function(){
@@ -215,10 +214,6 @@ var box3 = {
     },
     "pause" : function() {
         document.getElementById("myNav2").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }
@@ -238,10 +233,6 @@ var box4 = {
     },
     "pause" : function() {
         document.getElementById("myNav2").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }

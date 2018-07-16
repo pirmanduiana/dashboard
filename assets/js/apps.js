@@ -12,7 +12,7 @@ function timerIncrement() {
             $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
             $(".overlay a").css("display","none");
             $(".overlay.overlay-content").css("padding","20px;");
-            $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");    
+            $("#aBackButton").attr("onclick","box1.pause();").css("padding","5%");    
             playList();
         }
     }
@@ -49,7 +49,7 @@ var playList = function() {
 
 $(document).ready(function()
 {
-    var idleInterval = setInterval(timerIncrement, 2000); // 60000 = 1 minute
+    //var idleInterval = setInterval(timerIncrement, 2000); // 60000 = 1 minute
 
     $(".column.c1").on("click", function(){
         setTimeout(
@@ -92,9 +92,13 @@ $(document).ready(function()
                 box6.play();
         },
         500);
-    });   
+    }); 
+    
+    $(document.body).addClass("apps");
     
 });
+
+
 
 var players = {
     "play" : function(video_url){
@@ -133,10 +137,7 @@ var box1 = {
     },
     "pause" : function() {
         document.getElementById("myNav1").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
+        
         players.pause();
         return true;
     }
@@ -154,10 +155,6 @@ var box2 = {
     },
     "pause" : function() {
         document.getElementById("myNav1").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }
@@ -170,15 +167,11 @@ var box3 = {
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");  
+        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
         players.play(url_player3);
     },
     "pause" : function() {
         document.getElementById("myNav1").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }
@@ -196,10 +189,6 @@ var box4 = {
     },
     "pause" : function() {
         document.getElementById("myNav1").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }
@@ -217,10 +206,6 @@ var box5 = {
     },
     "pause" : function() {
         document.getElementById("myNav1").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }
@@ -234,14 +219,10 @@ var box6 = {
         $(".overlay a").css("display","none");
         $(".overlay.overlay-content").css("padding","20px;");
         $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
-        players.play(url_player1);
+        players.play(url_player6);
     },
     "pause" : function() {
         document.getElementById("myNav1").style.height = "0%";
-        $(".main-btn-action").css("position","unset").css("bottom","0").css("left","0").css("transition","all 0.4s").css("z-index","0");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","20%").css("min-height","unset");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","0px;");
         players.pause();
         return true;
     }

@@ -60,11 +60,11 @@
     </div>            
     <!-- End Modal -->    
     <script>var url_player1 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>
-    <script>var url_player2 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>    
-    <script>var url_player3 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>            
-    <script>var url_player4 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>        
-    <script>var url_player5 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>            
-    <script>var url_player6 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
+    <script>var url_player2 = '{{ url("assets/videos/v_absensionline.mp4") }}';</script>    
+    <script>var url_player3 = '{{ url("assets/videos/v_absensimobile.mp4") }}';</script>            
+    <script>var url_player4 = '{{ url("assets/videos/v_bwise.mp4") }}';</script>        
+    <script>var url_player5 = '{{ url("assets/videos/v_esurat.mp4") }}';</script>            
+    <script>var url_player6 = '{{ url("assets/videos/v_agenda.mp4") }}';</script>
 
     <!-- playlist video -->
     <!-- Modal Box Video 1 -->

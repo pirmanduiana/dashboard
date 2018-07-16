@@ -3,6 +3,9 @@
         <div class="sites-logo">
             <h1>Pameran Festival Budaya</h1>
         </div>
+        <div class="sites-title">
+            <h2>Dashboard Aplikasi</h2>
+        </div>
         <div class="date">
             <p id="date_time"></p>
         </div>

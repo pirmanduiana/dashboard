@@ -91,9 +91,9 @@
                                         <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#sekretaris">Profil Lengkap</button>
                                     <!-- ESELON 2 -->
                                     <ul>
-                                        <li><span class="tree_label"><b>Sub Bag Perencanaan dan Pelaporan</b></span>  <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#perencanaan">Profil Lengkap</button></li>
-                                        <li><span class="tree_label"><b>Sub Bag Umum dan Kepeg</b></span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#umum">Profil Lengkap</button></li>
-                                        <li><span class="tree_label"><b>Sub Bag Keuangan</b></span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#keuangan">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Sub Bag Perencanaan dan Pelaporan</span>  <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#perencanaan">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Sub Bag Umum dan Kepeg</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#umum">Profil Lengkap</button></li>
+                                        <li><span class="tree_label">Sub Bag Keuangan</span> <button class="btn-info" style="padding:5px" data-toggle="modal" data-target="#keuangan">Profil Lengkap</button></li>
                                     </ul>
                                     <!-- ESELON 1 -->
                                 </li>
