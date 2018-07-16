@@ -12,7 +12,7 @@ function timerIncrement() {
             $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
             $(".overlay a").css("display","none");
             $(".overlay.overlay-content").css("padding","20px;");
-            $("#aBackButton").attr("onclick","box1.pause();").css("padding","5%");    
+            $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");    
             playList();
         }
     }
@@ -49,7 +49,7 @@ var playList = function() {
 
 $(document).ready(function()
 {
-    //var idleInterval = setInterval(timerIncrement, 2000); // 60000 = 1 minute
+    var idleInterval = setInterval(timerIncrement, 2000); // 60000 = 1 minute
 
     $(".column.c1").on("click", function(){
         setTimeout(
