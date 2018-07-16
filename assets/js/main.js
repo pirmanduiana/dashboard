@@ -51,7 +51,7 @@ var playList = function() {
 
 $(document).ready(function()
 {
-    //var idleInterval = setInterval(timerIncrement, 2000);
+    var idleInterval = setInterval(timerIncrement, 2000);
 
     $(".column.c1").on("click", function(){
         setTimeout(
