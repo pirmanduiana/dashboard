@@ -164,6 +164,9 @@ var box1 = {
         .done(function (html) {
             $("#dvModalBox_").html(html);
             isPlaying = true;
+            setTimeout(function() {
+                window.location.reload();
+            }, 10000);
         })
         .fail(function(xhr){
             console.log(xhr);
@@ -190,6 +193,9 @@ var box2 = {
         .done(function (html) {
             $("#dvModalBox_").html(html);
             isPlaying = true;
+            setTimeout(function() {
+                window.location.reload();
+            }, 10000);
         })
         .fail(function(xhr){
             console.log(xhr);
