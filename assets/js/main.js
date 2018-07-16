@@ -195,7 +195,7 @@ var box2 = {
             isPlaying = true;
             setTimeout(function() {
                 window.location.reload();
-            }, 13000);
+            }, 15000);
         })
         .fail(function(xhr){
             console.log(xhr);
