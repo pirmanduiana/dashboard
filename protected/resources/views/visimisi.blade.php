@@ -1,7 +1,6 @@
 {{ Html::style('assets/pages/css/base.css') }}
 
 
-
         <div id="template-page-content">
             
             <h1 class="template-page-header text-center"><span>Visi</span></h1>
