@@ -23,20 +23,12 @@ function timerIncrement() {
 var playList = function() {
     var videos = [
         {
-            src : [url_video1],
+            src : [url_screensaver],
             preload: 'auto',
             fluid: true,
             loop: true,
             poster : '',
             title : 'Video 1'
-        },
-        {
-            src : [url_video2],
-            preload: 'auto',
-            fluid: true,
-            loop: true,
-            poster : '',
-            title : 'Video 2'
         }
     ];
     var player = videojs('main-playlist');
@@ -301,7 +293,7 @@ var box8 = {
         params  = 'width='+screen.width;
         params += ', height='+screen.height;
         params += ', fullscreen=yes';
-        var myWindow = window.open("https://www.google.com/maps/d/u/0/viewer?mid=1WcP1vFpwtl21VQepaijTGSGxSQiWV9tS&ll=-8.670767922083156%2C65.17994999999996&z=4", "popupWindow", params);
+        var myWindow = window.open("https://www.google.com/maps/d/viewer?mid=1WcP1vFpwtl21VQepaijTGSGxSQiWV9tS&ll=-8.481335944594786%2C115.12654423828121&z=10", "popupWindow", params);
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
@@ -318,7 +310,7 @@ var box9 = {
         params  = 'width='+screen.width;
         params += ', height='+screen.height;
         params += ', fullscreen=yes';
-        var myWindow = window.open("https://www.google.com/maps/d/u/0/viewer?mid=1FTmhK1eKBWywbsDgjNUCvBINJw0_5pMu&ll=-0.039728674071050664%2C83.49248550000002&z=3", "popupWindow", params);
+        var myWindow = window.open("https://www.google.com/maps/d/viewer?mid=1FTmhK1eKBWywbsDgjNUCvBINJw0_5pMu&ll=-8.538148697017892%2C115.08779289648442&z=10", "popupWindow", params);
         myWindow.onload = function(){
             this.alert("fdjsla");
         };

@@ -24,6 +24,7 @@
     <!-- End Modal -->
     <script>var url_video1 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
     <script>var url_video2 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>     
+    <script>var url_screensaver = '{{ url("assets/videos/screensaver-final.mov") }}';</script> 
 
     <!-- Modal Box lainnya -->
     <div id="myNav_" class="overlay fullModal">
