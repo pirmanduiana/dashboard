@@ -19,7 +19,7 @@
 
                 <a class="column c3 material_ripple" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-foto.png" alt="">
+                        <img src="./assets/images/icons/ico-edukasi.png" alt="">
                     </div>
                     <h2>Video Edukasi</h2>
                 </a>
