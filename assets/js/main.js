@@ -6,47 +6,55 @@ function timerIncrement() {
     idleTime = idleTime + 1;
     if (!isPlaying) {
         if (idleTime == timeToAutoPlay) {
-            console.log(idleTime);
-            document.getElementById("myNavPl").style.height = "100vh";
-            $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-            $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-            $(".overlay a").css("display","none");
-            $(".overlay.overlay-content").css("padding","20px;");
-            $("#aBackButton").attr("onclick","box3.pause();").css("padding","30%");
-            playList.play();
+            console.log(idleTime);            
+            MainplayList.play();
         }
     } else {
         idleTime = 0;
     }
 
 }
-var playList = {
+var MainplayList = {
     "play" : function(){
+        document.getElementById("myNavPl").style.height = "100vh";
+        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
+        $(".overlay a").css("display","none");
+        $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box3.pause();").css("padding","30%");
         var videoList = [{
-        sources: [{
-            src: url_screensever,
-            controls: true,
-            type: 'video/mp4'
-            }]
-        }];
+            sources: [{
+                src: url_screensever,
+                controls: true,
+                type: 'video/mp4'
+                }]
+            },            
+            {
+                sources: [{
+                src: url_video1,
+                controls: true,
+                type: 'video/mp4'
+                }]
+            }
+        ];
     
-        playlist_player = videojs(document.querySelector('#main-playlist'), {
+        playlist_main_player = videojs(document.querySelector('#main-playlist'), {
             inactivityTimeout: 0
         });
-        playlist_player.playlist(videoList);
-        playlist_player.playlist.autoadvance(0);
-        playlist_player.playlist.repeat(true);
-        playlist_player.play();   
+        playlist_main_player.playlist(videoList);
+        playlist_main_player.playlist.autoadvance(0);
+        playlist_main_player.playlist.repeat(true);
+        playlist_main_player.play();   
         isPlaying = true;
     },
     "pause" : function(){
-        playlist_player.pause();
+        playlist_main_player.pause();
     },
     "next" : function(){
-        playlist_player.playlist.next();
+        playlist_main_player.playlist.next();
     },
     "prev" : function(){
-        playlist_player.playlist.previous();
+        playlist_main_player.playlist.previous();
     }
 }
 

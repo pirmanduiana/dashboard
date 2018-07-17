@@ -6,13 +6,7 @@ function timerIncrement() {
     idleTime = idleTime + 1;
     if (!isPlaying) {        
         if (idleTime == timeToAutoPlay) {
-            console.log("iddle");
-            document.getElementById("myNavPl").style.height = "100vh";
-            $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-            $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-            $(".overlay a").css("display","none");
-            $(".overlay.overlay-content").css("padding","20px;");
-            $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");    
+            console.log("iddle");            
             playList.play();
         }
     }
@@ -20,6 +14,12 @@ function timerIncrement() {
 }
 var playList = {
     "play" : function(){
+        document.getElementById("myNavPl").style.height = "100vh";
+        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
+        $(".overlay a").css("display","none");
+        $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
         var videoList = [{
         sources: [{
             src: url_player1,
@@ -33,25 +33,53 @@ var playList = {
             controls: true,
             type: 'video/mp4'
             }]
+        },
+        {
+            sources: [{
+            src: url_player3,
+            controls: true,
+            type: 'video/mp4'
+            }]
+        },
+        {
+            sources: [{
+            src: url_player4,
+            controls: true,
+            type: 'video/mp4'
+            }]
+        },
+        {
+            sources: [{
+            src: url_player5,
+            controls: true,
+            type: 'video/mp4'
+            }]
+        },
+        {
+            sources: [{
+            src: url_player6,
+            controls: true,
+            type: 'video/mp4'
+            }]
         }];
     
-        playlist_player = videojs(document.querySelector('#apps-playlist'), {
+        playlist_apps_player = videojs(document.querySelector('#apps-playlist'), {
             inactivityTimeout: 0
         });
-        playlist_player.playlist(videoList);
-        playlist_player.playlist.autoadvance(0);
-        playlist_player.playlist.repeat(true);
-        playlist_player.play();   
+        playlist_apps_player.playlist(videoList);
+        playlist_apps_player.playlist.autoadvance(0);
+        playlist_apps_player.playlist.repeat(true);
+        playlist_apps_player.play();   
         isPlaying = true;
     },
     "pause" : function(){
-        playlist_player.pause();
+        playlist_apps_player.pause();
     },
     "next" : function(){
-        playlist_player.playlist.next();
+        playlist_apps_player.playlist.next();
     },
     "prev" : function(){
-        playlist_player.playlist.previous();
+        playlist_apps_player.playlist.previous();
     }
 }
 
