@@ -195,9 +195,6 @@ var box2 = {
         .done(function (html) {
             $("#dvModalBox_").html(html);
             isPlaying = true;
-            setTimeout(function() {
-                window.location.reload();
-            }, 15000);
         })
         .fail(function(xhr){
             console.log(xhr);
@@ -206,6 +203,7 @@ var box2 = {
     "sleep" : function(){
         document.getElementById("myNav_").style.height = "0%";
         isPlaying = false;
+        
     }
 };
 

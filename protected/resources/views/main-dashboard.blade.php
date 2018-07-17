@@ -91,7 +91,7 @@
 
     <!-- Modal Box lainnya -->
     <div id="myNav_" class="overlay fullModal">
-        <a href="#" class="closebtn" onclick="box1.sleep();">&times;</a>
+        <a href="#" class="closebtn" onclick="window.location.reload();">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox_">
                 <!-- content embed -->
