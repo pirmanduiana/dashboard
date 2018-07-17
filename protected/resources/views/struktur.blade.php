@@ -27,6 +27,7 @@
         width: 50px;
         text-align: center;
         border-radius: 3px;
+        padding:15px 0;
     }
     .overlay a:hover, .overlay a:focus {
         background-color: #e02222;
@@ -166,7 +167,7 @@
             </div>
         </div>
     </div>
-	
+
 
     <!-- Modal kepala kadis-->
     <div class="modal fade" id="kadis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -472,7 +473,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='{{url("assets/images/pegawai/pengelolakomunikasipublik/kasi_tiga.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolakomunikasipublik/kasi_tiga_2.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -598,7 +599,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='{{url("assets/images/pegawai/egov/kabid.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/egov/kabid_2.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">

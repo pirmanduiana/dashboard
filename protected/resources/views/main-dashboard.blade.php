@@ -85,8 +85,8 @@
         </div>
     </div>            
     <!-- End Modal -->
-    <script>var url_video1 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>
-    <script>var url_video2 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>     
+    <script>var url_video1 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
+    <script>var url_video2 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>     
     <script>var url_screensever = '{{ url("assets/videos/screensever.mp4") }}';</script> 
 
     <!-- Modal Box lainnya -->
