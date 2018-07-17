@@ -20,27 +20,6 @@ function timerIncrement() {
     }
 
 }
-<<<<<<< HEAD
-var playList = function() {
-    var videos = [
-        {
-            src : [url_screensaver],
-            preload: 'auto',
-            fluid: true,
-            loop: true,
-            poster : '',
-            title : 'Video 1'
-        }
-    ];
-    var player = videojs('main-playlist');
-    player.playList(videos, {
-        getVideoSource: function(vid, cb) {
-            cb(vid.src, vid.poster, vid.loop);
-        }
-    });
-    player.play();
-    isPlaying = true;
-=======
 var playList = {
     "play" : function(){
         var videoList = [{
@@ -76,7 +55,6 @@ var playList = {
     "prev" : function(){
         playlist_player.playlist.previous();
     }
->>>>>>> f23489f6a29f8843c2d2c5f919367996df8944f2
 }
 
 $(document).ready(function()
