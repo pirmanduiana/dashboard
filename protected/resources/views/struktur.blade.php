@@ -27,6 +27,7 @@
         width: 50px;
         text-align: center;
         border-radius: 3px;
+        padding:15px 0;
     }
     .overlay a:hover, .overlay a:focus {
         background-color: #e02222;
