@@ -28,13 +28,6 @@ var MainplayList = {
                 controls: true,
                 type: 'video/mp4'
                 }]
-            },            
-            {
-                sources: [{
-                src: url_video1,
-                controls: true,
-                type: 'video/mp4'
-                }]
             }
         ];
     
