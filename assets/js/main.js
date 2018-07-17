@@ -13,13 +13,14 @@ function timerIncrement() {
             $(".overlay a").css("display","none");
             $(".overlay.overlay-content").css("padding","20px;");
             $("#aBackButton").attr("onclick","box3.pause();").css("padding","30%");
-            playList();
+            playList.play();
         }
     } else {
         idleTime = 0;
     }
 
 }
+<<<<<<< HEAD
 var playList = function() {
     var videos = [
         {
@@ -39,6 +40,43 @@ var playList = function() {
     });
     player.play();
     isPlaying = true;
+=======
+var playList = {
+    "play" : function(){
+        var videoList = [{
+        sources: [{
+            src: url_video1,
+            controls: true,
+            type: 'video/mp4'
+            }]
+        },
+        {
+            sources: [{
+            src: url_video2,
+            controls: true,
+            type: 'video/mp4'
+            }]
+        }];
+    
+        playlist_player = videojs(document.querySelector('#main-playlist'), {
+            inactivityTimeout: 0
+        });
+        playlist_player.playlist(videoList);
+        playlist_player.playlist.autoadvance(0);
+        playlist_player.playlist.repeat(true);
+        playlist_player.play();   
+        isPlaying = true;
+    },
+    "pause" : function(){
+        playlist_player.pause();
+    },
+    "next" : function(){
+        playlist_player.playlist.next();
+    },
+    "prev" : function(){
+        playlist_player.playlist.previous();
+    }
+>>>>>>> f23489f6a29f8843c2d2c5f919367996df8944f2
 }
 
 $(document).ready(function()
@@ -187,7 +225,7 @@ var box2 = {
             isPlaying = true;
             setTimeout(function() {
                 window.location.reload();
-            }, 10000);
+            }, 15000);
         })
         .fail(function(xhr){
             console.log(xhr);
