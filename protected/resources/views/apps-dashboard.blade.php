@@ -27,7 +27,7 @@
                     <div class="image">
                         <img src="./assets/images/icons/ico-bwise.png" alt="">
                     </div>
-                    <h2>b-wise</h2>
+                    <h2>Aplikasi Pengaduan</h2>
                 </a>                
             </div>
             <div class="rows row-second">

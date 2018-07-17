@@ -23,12 +23,8 @@
     </div>            
     <!-- End Modal -->
     <script>var url_video1 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
-<<<<<<< HEAD
     <script>var url_video2 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>     
-    <script>var url_screensaver = '{{ url("assets/videos/screensaver-final.mov") }}';</script> 
-=======
-    <script>var url_video2 = '{{ url("assets/videos/v_esurat.mp4") }}';</script>     
->>>>>>> f23489f6a29f8843c2d2c5f919367996df8944f2
+    <script>var url_screensever = '{{ url("assets/videos/screensever.mp4") }}';</script> 
 
     <!-- Modal Box lainnya -->
     <div id="myNav_" class="overlay fullModal">

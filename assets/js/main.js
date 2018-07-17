@@ -24,14 +24,7 @@ var playList = {
     "play" : function(){
         var videoList = [{
         sources: [{
-            src: url_video1,
-            controls: true,
-            type: 'video/mp4'
-            }]
-        },
-        {
-            sources: [{
-            src: url_video2,
+            src: url_screensever,
             controls: true,
             type: 'video/mp4'
             }]

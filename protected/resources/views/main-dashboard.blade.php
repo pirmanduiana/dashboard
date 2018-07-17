@@ -21,7 +21,7 @@
                     <div class="image">
                         <img src="./assets/images/icons/ico-foto.png" alt="">
                     </div>
-                    <h2>Foto Kegiatan</h2>
+                    <h2>Video Edukasi</h2>
                 </a>
 
                 <a class="column c4 material_ripple" href="#">
