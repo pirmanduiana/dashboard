@@ -13,40 +13,41 @@ function timerIncrement() {
             $(".overlay a").css("display","none");
             $(".overlay.overlay-content").css("padding","20px;");
             $("#aBackButton").attr("onclick","box3.pause();").css("padding","30%");
-            playList();
+            playList.play();
         }
     } else {
         idleTime = 0;
     }
 
 }
-var playList = function() {
-    var videos = [
-        {
-            src : [url_video1],
-            preload: 'auto',
-            fluid: true,
-            loop: true,
-            poster : '',
-            title : 'Video 1'
-        },
-        {
-            src : [url_video2],
-            preload: 'auto',
-            fluid: true,
-            loop: true,
-            poster : '',
-            title : 'Video 2'
-        }
-    ];
-    var player = videojs('main-playlist');
-    player.playList(videos, {
-        getVideoSource: function(vid, cb) {
-            cb(vid.src, vid.poster, vid.loop);
-        }
-    });
-    player.play();
-    isPlaying = true;
+var playList = {
+    "play" : function(){
+        var videoList = [{
+        sources: [{
+            src: url_screensever,
+            controls: true,
+            type: 'video/mp4'
+            }]
+        }];
+    
+        playlist_player = videojs(document.querySelector('#main-playlist'), {
+            inactivityTimeout: 0
+        });
+        playlist_player.playlist(videoList);
+        playlist_player.playlist.autoadvance(0);
+        playlist_player.playlist.repeat(true);
+        playlist_player.play();   
+        isPlaying = true;
+    },
+    "pause" : function(){
+        playlist_player.pause();
+    },
+    "next" : function(){
+        playlist_player.playlist.next();
+    },
+    "prev" : function(){
+        playlist_player.playlist.previous();
+    }
 }
 
 $(document).ready(function()
@@ -301,7 +302,7 @@ var box8 = {
         params  = 'width='+screen.width;
         params += ', height='+screen.height;
         params += ', fullscreen=yes';
-        var myWindow = window.open("https://www.google.com/maps/d/u/0/viewer?mid=1WcP1vFpwtl21VQepaijTGSGxSQiWV9tS&ll=-8.670767922083156%2C65.17994999999996&z=4", "popupWindow", params);
+        var myWindow = window.open("https://www.google.com/maps/d/viewer?mid=1WcP1vFpwtl21VQepaijTGSGxSQiWV9tS&ll=-8.481335944594786%2C115.12654423828121&z=10", "popupWindow", params);
         myWindow.onload = function(){
             this.alert("fdjsla");
         };
@@ -318,7 +319,7 @@ var box9 = {
         params  = 'width='+screen.width;
         params += ', height='+screen.height;
         params += ', fullscreen=yes';
-        var myWindow = window.open("https://www.google.com/maps/d/u/0/viewer?mid=1FTmhK1eKBWywbsDgjNUCvBINJw0_5pMu&ll=-0.039728674071050664%2C83.49248550000002&z=3", "popupWindow", params);
+        var myWindow = window.open("https://www.google.com/maps/d/viewer?mid=1FTmhK1eKBWywbsDgjNUCvBINJw0_5pMu&ll=-8.538148697017892%2C115.08779289648442&z=10", "popupWindow", params);
         myWindow.onload = function(){
             this.alert("fdjsla");
         };

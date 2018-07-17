@@ -39,7 +39,7 @@
   {{ Html::style('assets/js/jquery-confirm-master/dist/jquery-confirm.min.css') }}
 
   <!-- videojs cdnjs -->
-  {{ Html::style('assets/js/videojs/video-js.css') }}  
+  {{ Html::style('assets/js/videojs/npm/video-js.css') }}  
   
   {{ Html::script('assets/js/date_time.js') }}
 </head>
@@ -77,8 +77,8 @@
     <!-- END CORE PLUGINS -->
     {{ Html::script('assets/js/full.js') }}
 
-    {{ Html::script('assets/js/videojs/video4.js') }}
-    {{ Html::script('assets/js/videojs/videojs-playlists.js') }}
+    {{ Html::script('assets/js/videojs/npm/video.js') }}
+    {{ Html::script('assets/js/videojs/npm/videojs-playlist.js') }}
 
     {{ Html::script('assets/js/material_ripple.js') }}
     <script>

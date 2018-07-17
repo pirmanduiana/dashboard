@@ -422,6 +422,17 @@ a:hover {
     flex:0 0 23.5% !important;
 }
 
+/* Video JS */
+
+.main-playlist-dimensions {
+    width: 1280px;
+    height: auto;
+}
+
+.video-js .vjs-tech {
+    min-width: 100vw;
+    min-height: 100vh;
+}
 
 
 /* Footer */
