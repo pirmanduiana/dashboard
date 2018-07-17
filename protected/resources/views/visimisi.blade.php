@@ -81,7 +81,7 @@
                     <div class="template-timeline-content-column-right">
                         <ul class="template-timeline-event-list">
                             <li>
-                                <div class="template-event-list-content">
+                                <div class="template-event-list-content" style="background-color: #141f72;">
                                     <span class="template-icon-small template-icon-info">
                                         <span class="template-event-list-content-icon-arrow"></span>
                                         <span class="template-event-list-content-icon-circle"></span>

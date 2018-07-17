@@ -173,9 +173,9 @@ var box1 = {
         .done(function (html) {
             $("#dvModalBox_").html(html);
             isPlaying = true;
-            //setTimeout(function() {
-            //    window.location.reload();
-            //}, 11000);
+            setTimeout(function() {
+                window.location.reload();
+            }, 15000);
         })
         .fail(function(xhr){
             console.log(xhr);
