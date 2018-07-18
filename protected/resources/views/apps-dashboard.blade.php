@@ -52,7 +52,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox1">
-                <video id='apps-video1' class='video-js'>
+                <video id='apps-video1' class='video-js vjs-16-9'>
                     <!-- video rendered here -->
                 </video>
             </div>
@@ -72,7 +72,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBoxPl">
-                <video id="apps-playlist" class="video-js">
+                <video id="apps-playlist" class="video-js vjs-16-9">
                 </video>
             </div>
         </div>
