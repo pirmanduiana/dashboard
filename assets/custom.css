@@ -424,6 +424,10 @@ a:hover {
 
 /* Video JS */
 
+.video-js.vjs-16-9 {
+    padding-top: 0 !important;
+}
+
 .main-playlist-dimensions {
     width: 1280px;
     height: auto;
