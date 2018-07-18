@@ -7,13 +7,13 @@ function timerIncrement() {
     if (!isPlaying) {        
         if (idleTime == timeToAutoPlay) {
             console.log("iddle");            
-            playList.play();
+            playList.play(0);
         }
     }
 
 }
 var playList = {
-    "play" : function(){
+    "play" : function(idxToPlay){
         document.getElementById("myNavPl").style.height = "100vh";
         $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
         $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
@@ -66,7 +66,7 @@ var playList = {
         playlist_apps_player = videojs(document.querySelector('#apps-playlist'), {
             inactivityTimeout: 0
         });
-        playlist_apps_player.playlist(videoList);
+        playlist_apps_player.playlist(videoList, idxToPlay);
         playlist_apps_player.playlist.autoadvance(0);
         playlist_apps_player.playlist.repeat(true);
         playlist_apps_player.play();   
@@ -90,42 +90,42 @@ $(document).ready(function()
     $(".column.c1").on("click", function(){
         setTimeout(
             function() {
-                box1.play();
+                playList.play(0);
         },
         500);
     });
     $(".column.c2").on("click", function(){
         setTimeout(
             function() {
-                box2.play();
+                playList.play(1);
         },
         500);
     });
     $(".column.c3").on("click", function(){
         setTimeout(
             function() {
-                box3.play();
+                playList.play(2);
         },
         500);
     });
     $(".column.c4").on("click", function(){
         setTimeout(
             function() {
-                box4.play();
+                playList.play(3);
         },
         500);
     });
     $(".column.c5").on("click", function(){
         setTimeout(
             function() {
-                box5.play();
+                playList.play(4);
         },
         500);
     });
     $(".column.c6").on("click", function(){
         setTimeout(
             function() {
-                box6.play();
+                playList.play(5);
         },
         500);
     }); 
@@ -138,6 +138,12 @@ $(document).ready(function()
 
 var players = {
     "play" : function(video_url){
+        document.getElementById("myNav1").style.height = "100vh";
+        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
+        $(".overlay a").css("display","none");
+        $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
         player1 = videojs('apps-video1', {
             preload: 'auto',
             controls: false,
@@ -162,31 +168,18 @@ var players = {
 
 
 var box1 = {
-    "play" : function() {
-        document.getElementById("myNav1").style.height = "100vh";
-        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
+    "play" : function() {        
         players.play(url_player1);
     },
     "pause" : function() {
-        document.getElementById("myNav1").style.height = "0%";
-        
+        document.getElementById("myNav1").style.height = "0%";        
         players.pause();
         return true;
     }
 };
 
 var box2 = {
-    "play" : function() {
-        document.getElementById("myNav1").style.height = "100vh";
-        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
+    "play" : function() {        
         players.play(url_player2);
     },
     "pause" : function() {
@@ -197,13 +190,7 @@ var box2 = {
 };
 
 var box3 = {
-    "play" : function() {
-        document.getElementById("myNav1").style.height = "100vh";
-        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
+    "play" : function() {        
         players.play(url_player3);
     },
     "pause" : function() {
@@ -214,13 +201,7 @@ var box3 = {
 };
 
 var box4 = {
-    "play" : function() {
-        document.getElementById("myNav1").style.height = "100vh";
-        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");  
+    "play" : function() {        
         players.play(url_player4);
     },
     "pause" : function() {
@@ -231,13 +212,7 @@ var box4 = {
 };
 
 var box5 = {
-    "play" : function() {
-        document.getElementById("myNav1").style.height = "100vh";
-        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
+    "play" : function() {        
         players.play(url_player5);
     },
     "pause" : function() {
@@ -248,13 +223,7 @@ var box5 = {
 };
 
 var box6 = {
-    "play" : function() {
-        document.getElementById("myNav1").style.height = "100vh";
-        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
-        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
-        $(".overlay a").css("display","none");
-        $(".overlay.overlay-content").css("padding","20px;");
-        $("#aBackButton").attr("onclick","box1.pause();").css("padding","30%");
+    "play" : function() {        
         players.play(url_player6);
     },
     "pause" : function() {
