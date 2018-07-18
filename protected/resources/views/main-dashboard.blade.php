@@ -19,7 +19,7 @@
 
                 <a class="column c3 material_ripple" href="#">
                     <div class="image">
-                        <img src="./assets/images/icons/ico-foto.png" alt="">
+                        <img src="./assets/images/icons/ico-edukasi.png" alt="">
                     </div>
                     <h2>Video Edukasi</h2>
                 </a>
@@ -85,13 +85,13 @@
         </div>
     </div>            
     <!-- End Modal -->
-    <script>var url_video1 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>
-    <script>var url_video2 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>     
+    <script>var url_video1 = '{{ url("assets/videos/sequence_2.mp4") }}';</script>
+    <script>var url_video2 = '{{ url("assets/videos/sequence_1.mp4") }}';</script>     
     <script>var url_screensever = '{{ url("assets/videos/screensever.mp4") }}';</script> 
 
     <!-- Modal Box lainnya -->
     <div id="myNav_" class="overlay fullModal">
-        <a href="#" class="closebtn" onclick="box1.sleep();">&times;</a>
+        <a href="#" class="closebtn" onclick="window.location.reload();">&times;</a>
         <div class="overlay-content">
             <div class="align-center" id="dvModalBox_">
                 <!-- content embed -->

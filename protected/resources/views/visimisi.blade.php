@@ -1,7 +1,6 @@
 {{ Html::style('assets/pages/css/base.css') }}
 
 
-
         <div id="template-page-content">
             
             <h1 class="template-page-header text-center"><span>Visi</span></h1>
@@ -29,7 +28,7 @@
                                     </span>
                                     <h3 class="template-event-list-content-date text-right">1</h3>
                                     <h3 class="template-event-list-content-header"></h3>
-                                    <h3 style="color:white;">Memperkokoh Kerukunan Hidup Bermasyarakat Dalam Jalinan Keragaman Adat, Budaya, dan Agama</h3>
+                                    <h3 style="color:white; text-align: right">Memperkokoh Kerukunan Hidup Bermasyarakat Dalam Jalinan Keragaman Adat, Budaya, dan Agama</h3>
                                 </div>
                             </li>
                             <li>
@@ -40,7 +39,7 @@
                                     </span>
                                     <h3 class="template-event-list-content-date text-right">3</h3>
                                     <h3 class="template-event-list-content-header"></h3>
-                                    <h3 style="color:white;">Memantapkan Tata Kelola Pemerintah Dengan Menerapkan Prinsip Good Governance dan Clean Governance</h3>
+                                    <h3 style="color:white; text-align: right">Memantapkan Tata Kelola Pemerintah Dengan Menerapkan Prinsip Good Governance dan Clean Governance</h3>
                                 </div>
                             </li>
                             <li>
@@ -51,7 +50,7 @@
                                     </span>
                                     <h3 class="template-event-list-content-date text-right">5</h3>
                                     <h3 class="template-event-list-content-header"></h3>
-                                    <h3 style="color:white;">Memperkuat Usaha Mikro Kecil dan Menengah (UMKM) Sebagai Pilar Ekonomi Kerakyatan</h3>
+                                    <h3 style="color:white; text-align: right">Memperkuat Usaha Mikro Kecil dan Menengah (UMKM) Sebagai Pilar Ekonomi Kerakyatan</h3>
                                 </div>
                             </li>
                             <li>
@@ -62,7 +61,7 @@
                                     </span>
                                     <h3 class="template-event-list-content-date text-right">7</h3>
                                     <h3 class="template-event-list-content-header"></h3>
-                                    <h3 style="color:white;">Meningkatkan Perlindungan dan Pengelolaan Terhadap Sumber Daya Alam dan Lingkungan Hidup</h3>
+                                    <h3 style="color:white; text-align: right">Meningkatkan Perlindungan dan Pengelolaan Terhadap Sumber Daya Alam dan Lingkungan Hidup</h3>
                                 </div>
                             </li>
                             <li class="template-timeline-event-list-featured">
@@ -73,7 +72,7 @@
                                     </span>
                                     <h3 class="template-event-list-content-date text-right">9</h3>
                                     <h3 class="template-event-list-content-header"></h3>
-                                    <h3 style="color:white;">Memperkuat Perlindungan dan Pengelolaan Terhadap Sumber Daya Alam dan Lingkungan Hidup</h3>
+                                    <h3 style="color:white; text-align: right">Memperkuat Perlindungan dan Pengelolaan Terhadap Sumber Daya Alam dan Lingkungan Hidup</h3>
                                 </div>
                             </li>   
                         </ul>
@@ -82,7 +81,7 @@
                     <div class="template-timeline-content-column-right">
                         <ul class="template-timeline-event-list">
                             <li>
-                                <div class="template-event-list-content">
+                                <div class="template-event-list-content" style="background-color: #141f72;">
                                     <span class="template-icon-small template-icon-info">
                                         <span class="template-event-list-content-icon-arrow"></span>
                                         <span class="template-event-list-content-icon-circle"></span>

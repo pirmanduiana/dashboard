@@ -27,6 +27,7 @@
         width: 50px;
         text-align: center;
         border-radius: 3px;
+        padding:15px 0;
     }
     .overlay a:hover, .overlay a:focus {
         background-color: #e02222;
@@ -166,7 +167,7 @@
             </div>
         </div>
     </div>
-	
+
 
     <!-- Modal kepala kadis-->
     <div class="modal fade" id="kadis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -177,7 +178,7 @@
                     <div class="cardheader">
                     </div>
                     <div class="avatar">
-                        <img src='assets/images/pegawai/kepala_dinas/kepala_dinas.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                        <img src='{{url("assets/images/pegawai/kepala_dinas/kepala_dinas.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                     </div>
                     <div class="info">
                         <div class="title">
@@ -201,7 +202,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/sekdis/sekdis.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/sekdis/sekdis.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -226,7 +227,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/sekdis/perencanaan.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/sekdis/perencanaan.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -251,7 +252,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/sekdis/umum.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/sekdis/umum.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -275,7 +276,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/sekdis/keuangan.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/sekdis/keuangan.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -300,7 +301,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='https://www.kominfo.go.id/images/unnamed.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("https://www.kominfo.go.id/images/unnamed.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -322,7 +323,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolainformasipublik/kasi_satu.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolainformasipublik/kasi_satu.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -347,7 +348,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolainformasipublik/kasi_dua.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolainformasipublik/kasi_dua.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -372,7 +373,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolainformasipublik/kasi_tiga.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolainformasipublik/kasi_tiga.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -397,7 +398,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolakomunikasipublik/kabid.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolakomunikasipublik/kabid.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -422,7 +423,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolakomunikasipublik/kasi_satu.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolakomunikasipublik/kasi_satu.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -447,7 +448,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolakomunikasipublik/kasi_dua.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolakomunikasipublik/kasi_dua.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -472,7 +473,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/pengelolakomunikasipublik/kasi_tiga.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/pengelolakomunikasipublik/kasi_tiga_2.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -497,7 +498,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/tekhnologiinformasikomunikasi/kabid.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/tekhnologiinformasikomunikasi/kabid.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -522,7 +523,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/tekhnologiinformasikomunikasi/kasi_satu.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/tekhnologiinformasikomunikasi/kasi_satu.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -547,7 +548,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/tekhnologiinformasikomunikasi/kasi_dua.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/tekhnologiinformasikomunikasi/kasi_dua.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -572,7 +573,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/tekhnologiinformasikomunikasi/kasi_tiga.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/tekhnologiinformasikomunikasi/kasi_tiga.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -598,7 +599,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/egov/kabid.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/egov/kabid_2.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -623,7 +624,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/egov/kasi_satu.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/egov/kasi_satu.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -648,7 +649,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/egov/kasi_dua.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/egov/kasi_dua.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -673,7 +674,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/egov/kasi_tiga.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/egov/kasi_tiga.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -698,7 +699,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/persandianstatistik/kabid.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/persandianstatistik/kabid.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">
@@ -721,7 +722,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/persandianstatistik/kasi_satu.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/persandianstatistik/kasi_satu.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">G.A. Nyoman Rima Kusuma Dewi, SE,M.Si
@@ -745,7 +746,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/persandianstatistik/kasi_dua.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/persandianstatistik/kasi_dua.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">Drs. Anak Agung Mayun
@@ -769,7 +770,7 @@
                     <div class="card hovercard" style="margin-left: 0px">
                         <div class="cardheader"> </div>
                         <div class="avatar">
-                            <img src='assets/images/pegawai/persandianstatistik/kasi_tiga.jpg' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
+                            <img src='{{url("assets/images/pegawai/persandianstatistik/kasi_tiga.jpg")}}' style="background-size: cover;   overflow: hidden;" alt="" onerror="this.src = 'assets/images/pegawai/unnamed.jpg';" ></a>
                         </div>
                         <div class="info">
                             <div class="title">I Made Subrata, S.Sos

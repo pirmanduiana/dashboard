@@ -6,8 +6,14 @@ function timerIncrement() {
     idleTime = idleTime + 1;
     if (!isPlaying) {
         if (idleTime == timeToAutoPlay) {
-            console.log(idleTime);            
-            MainplayList.play();
+            console.log(idleTime);
+            document.getElementById("myNav2").style.height = "100vh";
+        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
+        $(".overlay a").css("display","none");
+        $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box3.pause();").css("padding","30%");
+        players.play(url_screensever);
         }
     } else {
         idleTime = 0;
@@ -25,13 +31,6 @@ var MainplayList = {
         var videoList = [{
             sources: [{
                 src: url_screensever,
-                controls: true,
-                type: 'video/mp4'
-                }]
-            },            
-            {
-                sources: [{
-                src: url_video1,
                 controls: true,
                 type: 'video/mp4'
                 }]
@@ -173,9 +172,6 @@ var box1 = {
         .done(function (html) {
             $("#dvModalBox_").html(html);
             isPlaying = true;
-            setTimeout(function() {
-                window.location.reload();
-            }, 11000);
         })
         .fail(function(xhr){
             console.log(xhr);
@@ -202,9 +198,6 @@ var box2 = {
         .done(function (html) {
             $("#dvModalBox_").html(html);
             isPlaying = true;
-            setTimeout(function() {
-                window.location.reload();
-            }, 15000);
         })
         .fail(function(xhr){
             console.log(xhr);
