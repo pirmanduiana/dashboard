@@ -318,18 +318,20 @@ var box8 = {
 
 /* Link Website : Wifi */
 var box9 = {
-    "wakeup" : function(){
-        params  = 'width='+screen.width;
-        params += ', height='+screen.height;
-        params += ', fullscreen=yes';
-        var myWindow = window.open("https://www.google.com/maps/d/viewer?mid=1FTmhK1eKBWywbsDgjNUCvBINJw0_5pMu&ll=-8.538148697017892%2C115.08779289648442&z=10", "popupWindow", params);
-        myWindow.onload = function(){
-            this.alert("fdjsla");
-        };
-        isPlaying = true;
+    "play" : function(){
+        document.getElementById("myNav2").style.height = "100vh";
+        $(".footer").css("")
+        $(".main-btn-action").css("position","absolute").css("bottom","40px").css("left","50px").css("transition","all 0.4s").css("z-index","9999");
+        $(".main-btn-action > .content-btn-action > .btn-action").css("padding","5%").css("min-width","80%").css("min-height","45px");
+        $(".overlay a").css("display","none");
+        $(".overlay.overlay-content").css("padding","20px;");
+        $("#aBackButton").attr("onclick","box4.pause();").css("padding","30%");
+        players.play(url_wifi);
     },
-    "sleep" : function(){
-        isPlaying = false;
+    "pause" : function() {
+        document.getElementById("myNav2").style.height = "0%";
+        players.pause();
+        return true;
     }
 };
 
