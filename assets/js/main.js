@@ -120,7 +120,7 @@ $(document).ready(function()
     $(".column.c9").on("click", function(){
         setTimeout(
             function() {
-                box9.wakeup();
+                box9.play();
         },
         500);
     });
